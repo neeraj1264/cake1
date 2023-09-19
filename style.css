@@ -884,7 +884,7 @@ td img {
 /* -------------------Add CSS styles for dark mode------------------------------ */
 
 body.dark-mode {
-  background-color: black;
+  background-color: #333333;
   color: white;
 }
 body.dark-mode .speciality-heading {
@@ -954,11 +954,11 @@ body.dark-mode .dropdown-content {
 }
 
 body.dark-mode .main-box-speciality .box .content {
-  background: #333333
+  background: black
 }
 
 body.dark-mode .speciality {
-  background-color:black;
+  background-color: #333333;
 }
 
 body.dark-mode .speciality .main-box-speciality .box .content h3 {
