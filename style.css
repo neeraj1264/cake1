@@ -123,7 +123,7 @@ section {
 /* home css design */
 
 .home {
-  background: url(images/home-bg.jpg);
+  background: url(images/background2.png);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -909,8 +909,7 @@ body.dark-mode .btnn {
 } */
 
 body.dark-mode .home {
-  background-image: none;
-  background: black
+  background-image: linear-gradient(rgba(7,9,9,9.9),rgba(0,0,0,0.5)), url(images/background2.png);
 }
 body.dark-mode .popular .box-container .box {
   background-color: #333333;
@@ -934,15 +933,15 @@ body.dark-mode .home .content p {
 }
 
 body.dark-mode .header {
-  background-color: #191919
+  background-color: #333333
 }
 body.dark-mode .header a {
   color: white;
-  background: #191919
+  background: #333333
 }
 
 body.dark-mode .navbar {
-  background: #191919
+  background: #333333
 }
 
 body.dark-mode .modal-content {
@@ -959,7 +958,7 @@ body.dark-mode .main-box-speciality .box .content {
 }
 
 body.dark-mode .speciality {
-  background-color: black;
+  background-color:black;
 }
 
 body.dark-mode .speciality .main-box-speciality .box .content h3 {
