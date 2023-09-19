@@ -1,584 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cake Bakery</title>
-    <link rel="shortcut icon" type="image" href="./image/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <!-- bootstrap links -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- bootstrap links -->
-    <!-- fonts links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
-    <!-- fonts links -->
-    <!-- icons links -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <!-- icons links -->
-    <!-- animation links -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- animation links -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOODIES HUB </title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <div class="all-content">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-md" id="navbar">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#" id="logo"><img src="./image/logo.png" alt="" width="50px">Cake Bakery</a>
-          
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span><img src="./image/menu.png" alt="" width="30px"></span>
-            </button>
-          
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <!-- dropdown -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
-                     Category
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="#birthday" class="dropdown-item" >Birthday Cake</a>
-                        <a href="#" class="dropdown-item">Chocolate Cake</a>
-                        <a href="#" class="dropdown-item">Party Cake</a>
-                        <a href="#" class="dropdown-item">Slice Cake</a>
-                        <a href="#" class="dropdown-item">Cup Cake</a>
-                    </div>
-                </li>
-                <!-- dropdown -->
-                <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="icons">
-                <img src="./image/user.png" alt="" width="20px">
-                <img src="./image/heart.png" alt="" width="20px">
-                <img src="./image/add.png" alt="" width="24px">
-            </div>
-          </nav>
-        <!-- navbar end -->
-      
 
+  <!-- header section starts  -->
 
-        <!-- home section -->
-        <div class="home">
-            <div class="content" data-aos="zoom-out-right">
-                <h3>Delicious
-                    <br>Cakes Bakery
-                </h3>
-                <h2>Category <span class="changecontent"></span></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
-                    <br>Lorem ipsum dolor sit amet consectetur.
-                </p>
-                <a href="#" class="btn">Order Now</a>
-            </div>
-            <div class="img"  data-aos="zoom-out-left">
-                <img src="./image/background.png" alt="">
-            </div>
+  <header class="header">
+
+    <a href="#" id="logo"> <img src="images/logo1.png" alt=""></a>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <!-- <div class="dropdown">
+        <span class="dropbtn">Menu</span>
+        <div class="dropdown-content">
+          <a href="#Burger">Burger</a>
+          <a href="#Sandwich">Sandwich</a>
+          <a href="#Pasta">Pasta</a>
+          <a href="#pizza">Pizza</a>
+          <a href="#Chinese">Chinese</a>
+          <a href="#Shakes">Shakes</a>
+          <a href="#Garlic">Garlic_bread</a>
+          <a href="#Wrap">Wrap</a>
+          <a href="#Momos">Momos</a>
+          <a href="#Chaap">Chaap</a>
         </div>
-        <!-- home section end -->
+      </div> -->
+      <a href="#speciality">Menu</a>
+      <a href="review.html">Review</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
 
-      <!-- top cards -->
-      <div class="container" id="box"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <div class="row">
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <img src="./image/box1.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <img src="./image/box2.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <img src="./image/box3.jpg" alt="">
-                </div>
-            </div>
-        </div>
+    </nav>
+
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCartModal()">&times;</span>
+        <div id="cartItems"></div>
       </div>
-      <!-- top cards end -->
+    </div>
 
-      <!-- banner -->
-        <div class="banner"    data-aos="fade-up"
-        data-aos-duration="1500">
-            <div class="content">
-                <h3>Delicious Cake</h3>
-                <h2>UPTO 50% OFF</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quod.</p>
-                <div id="btnorder"><button>Order Now</button></div>
-            </div>
-            <div class="img">
-                <img src="./image/banner-background.png" alt="">
-            </div>
-        </div>
-      <!-- banner end -->
+    <!-- Modify the cart icon to call the function to show the cart data -->
+    <div id="cart" class="cart" onclick="showCartModal()">
+      <span id="cart-count">0</span>
+      <i class="fas fa-3x fa-shopping-cart"></i>
+    </div>
 
-      <!-- product cards -->
-      <section id="product-cards"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <div class="container">
-            <h1>CAKES</h1>
-            <div class="row" style="margin-top:50px;">
-               <div class="col-md-3 py-3 py-md-0">
-                <div class="card">
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                    </div>
-                    <img src="./image/c1.png" alt="">
-                    <div class="card-body">
-                        <h3>Cream Cake</h3>
-                        <div class="star">
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star "></i>
-                          <i class="bx bxs-star "></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <h6>$50.10 <span><button>Add Cart</button></span></h6>
-                    </div>
-                </div>
-               </div>
-               <div class="col-md-3 py-3 py-md-0">
-                <div class="card">
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                    </div>
-                    <img src="./image/c2.png" alt="">
-                    <div class="card-body">
-                        <h3>Choco Cake</h3>
-                        <div class="star">
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star "></i>
-                          <i class="bx bxs-star "></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <h6>$60.5 <span><button>Add Cart</button></span></h6>
-                    </div>
-                </div>
-               </div>
-               <div class="col-md-3 py-3 py-md-0">
-                <div class="card">
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                    </div>
-                    <img src="./image/c3.png" alt="">
-                    <div class="card-body">
-                        <h3>Slice Cake</h3>
-                        <div class="star">
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star "></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <h6>$100.10 <span><button>Add Cart</button></span></h6>
-                    </div>
-                </div>
-               </div>
-               <div class="col-md-3 py-3 py-md-0">
-                <div class="card">
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                    </div>
-                    <img src="./image/c4.png" alt="">
-                    <div class="card-body">
-                        <h3>Fruit Cake</h3>
-                        <div class="star">
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <h6>$30.20 <span><button>Add Cart</button></span></h6>
-                    </div>
-                </div>
-               </div>
-            </div>
+    <div id="dark-mode-toggle" class="dark-mode-toggle" onclick="toggleDarkMode()">
+      <i id="mode-icon" class="fas fa-3x fa-moon"></i>
+    </div>
+  </header>
 
+  <!-- header section ends -->
 
+  <!-- home section starts  -->
 
+  <section id="home" class="home">
 
+    <div class="image myimage">
+      <img src="images/home-img.png" alt="">
+    </div>
 
+    <div class="content">
+      <h3>FOODIES HUB</h3>
+      <p> Foodies Hub is your go-to resource for discovering new flavors, experimenting in the kitchen, and satisfying
+        your food cravings!</p>
+      <a href="#speciality" class="btn"><h4>MENU</h4></a>
+    </div>
 
-            <div class="row" style="margin-top:50px;"    data-aos="fade-up"
-            data-aos-duration="1500">
-                <div class="col-md-3 py-3 py-md-0">
-                 <div class="card">
-                     <div class="overlay">
-                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                     </div>
-                     <img src="./image/c5.png" alt="">
-                     <div class="card-body">
-                         <h3>Brown Cake</h3>
-                         <div class="star">
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star "></i>
-                           <i class="bx bxs-star "></i>
-                         </div>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                         <h6>$10.5 <span><button>Add Cart</button></span></h6>
-                     </div>
-                 </div>
-                </div>
-                <div class="col-md-3 py-3 py-md-0">
-                 <div class="card">
-                     <div class="overlay">
-                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                     </div>
-                     <img src="./image/c6.png" alt="">
-                     <div class="card-body">
-                         <h3>Slice Cake</h3>
-                         <div class="star">
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star "></i>
-                           <i class="bx bxs-star "></i>
-                         </div>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                         <h6>$15.5 <span><button>Add Cart</button></span></h6>
-                     </div>
-                 </div>
-                </div>
-                <div class="col-md-3 py-3 py-md-0">
-                 <div class="card">
-                     <div class="overlay">
-                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                     </div>
-                     <img src="./image/c7.png" alt="">
-                     <div class="card-body">
-                         <h3>Fruit Cake</h3>
-                         <div class="star">
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star "></i>
-                         </div>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                         <h6>$200.10 <span><button>Add Cart</button></span></h6>
-                     </div>
-                 </div>
-                </div>
-                <div class="col-md-3 py-3 py-md-0">
-                 <div class="card">
-                     <div class="overlay">
-                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                     </div>
-                     <img src="./image/c8.png" alt="">
-                     <div class="card-body">
-                         <h3>Choco Cake</h3>
-                         <div class="star">
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                           <i class="bx bxs-star checked"></i>
-                         </div>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                         <h6>$30.20 <span><button>Add Cart</button></span></h6>
-                     </div>
-                 </div>
-                </div>
-             </div>
-        </div>
-      </section>
+  </section>
 
+  <!-- home section ends -->
 
-      <section id=" product-cards"   data-aos="fade-up"
-      data-aos-duration="1500">
-        <div class="container" >
-            <h1>BIRTHDAY CAKE</h1>
-            <div class="row" style="margin-top: 50px;">
-                <div class="col-md-3 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                        </div>
-                        <img src="./image/c9.png" alt="">
-                        <div class="card-body">
-                            <h3>Birthday cake</h3>
-                            <div class="star">
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            <h6>$500.10 <span><button>Add Cart</button></span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                        </div>
-                        <img src="./image/c10.png" alt="">
-                        <div class="card-body">
-                            <h3>Bir Cup cake</h3>
-                            <div class="star">
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            <h6>300.20 <span><button>Add Cart</button></span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                        </div>
-                        <img src="./image/c11.png" alt="">
-                        <div class="card-body">
-                            <h3>Birthday cake</h3>
-                            <div class="star">
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            <h6>$100.50 <span><button>Add Cart</button></span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                        </div>
-                        <img src="./image/c12.png" alt="">
-                        <div class="card-body">
-                            <h3>Cup cake</h3>
-                            <div class="star">
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                                <i class="bx bxs-star checked"></i>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            <h6>$50.10 <span><button>Add Cart</button></span></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
+  <!-- speciality section starts  -->
 
-      <!-- product cards end-->
+  <section class="speciality" id="speciality">
 
+    <h1 class="speciality-heading"> Our <span>Menu</span></h1>
 
-      <!-- gallery -->
-      <section id="gallery"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <div class="container">
-            <h1>OUR Gallery</h1>
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Donuts</h3>
-                        </div>
-                        <img src="./image/o1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Ice Cream</h3>
-                        </div>
-                        <img src="./image/o2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Cup Cake</h3>
-                        </div>
-                        <img src="./image/o3.png" alt="">
-                    </div>
-                </div>
-            </div>
+    <div class="main-box-speciality">
 
+      <div class="box">
+        <a href="#Burger"><img class="image" src="images/s-img-1.jpg" alt="">
 
-            <div class="row" style="margin-top: 30px;"    data-aos="fade-up"
-            data-aos-duration="1500">
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Delicious Cake</h3>
-                        </div>
-                        <img src="./image/o4.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Chocolate Cake</h3>
-                        </div>
-                        <img src="./image/o5.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 py-3 py-md-0">
-                    <div class="card">
-                        <div class="overlay">
-                            <h3 class="text-center">Slice Cake</h3>
-                        </div>
-                        <img src="./image/o6.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!-- gallery -->
-
-
-
-      <!-- about -->
-      <div class="container" id="about"   >
-        <h1>ABOUT US</h1>
-        <div class="row">
-            <div class="col-md-6 py-3 py-md-0">
-                <div class="card">
-                    <img src="./image/about.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 py-3 py-md-0">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo nulla dicta perferendis cupiditate autem assumenda unde fugit? Corrupti ipsa fugiat similique voluptate temporibus, cupiditate cumque iusto? Necessitatibus suscipit qui molestias odit ad aspernatur harum aliquid ipsam nisi, culpa quae, magnam dolores cupiditate velit exercitationem ratione deleniti dignissimos labore quia esse ea quos consequuntur perferendis aliquam. Est assumenda doloremque nobis, tenetur fuga similique eligendi nihil non officia possimus aliquid animi nisi ipsum qui veritatis repellat harum accusamus odit iusto laudantium voluptatum ipsa ut fugit veniam. Voluptates sint molestiae officia consequuntur iure repudiandae autem reiciendis, perspiciatis veritatis soluta quia velit necessitatibus.</p>                
-
-                <div id="bt"><button>Read More...</button></div>
-            </div>
-        </div>
+          <div class="content">
+            <img src="images/s-img-1.jpg" alt="">
+            <h3>Best in Burgers</h3>
+            <p>Indulge in burger bliss with our mouthwatering classic! Our juicy, flame-grilled patty, fresh lettuce,
+              tomato, and secret sauce, all nestled in a soft, toasted bun, will satisfy your burger cravings like never
+              before.</p>
+          </div>
+        </a>
       </div>
-      <!-- about -->
 
+      <div class="box">
+        <a href="#Sandwich"> <img class="image" src="images/Sandwich.jpg" alt="">
 
-      <!-- contact  -->
-      <div class="container" id="contact" 
-      >
-        <h1>CONTACT US</h1>
-        <div class="row">
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="usr" placeholder="Name">
-                </div>
-            </div>
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="eml" placeholder="Email">
-                </div>
-            </div>
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="number" class="form-control" id="phn" placeholder="Phone">
-                </div>
-            </div>
-            
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
-        </div>
-        <div id="messagebtn"><button>Send Message</button></div>
+          <div class="content">
+            <img src="images/Sandwich.jpg" alt="">
+            <h3>Best in Sandwiches</h3>
+            <p>Savor simplicity at its finest with our signature sandwich. Freshly baked bread, premium deli meats,
+              crisp veggies, and a touch of gourmet spread come together for a satisfying bite of pure deliciousness.
+            </p>
+          </div>
+      </div></a>
+
+      <div class="box">
+        <a href="#Pasta"> <img class="image" src="images/whitepasta.jpg" alt="">
+
+          <div class="content">
+            <img src="images/whitepasta.jpg" alt="">
+            <h3>Best in Pasta</h3>
+            <p>Discover pasta perfection with our delectable dish. Al dente pasta twirled in a rich, savory sauce,
+              topped with grated Parmesan, promises a taste of Italy in every forkful.</p>
+          </div>
+      </div></a>
+
+      <div class="box">
+        <a href="#pizza"><img class="image" src="images/s-img-2.jpg" alt="">
+
+          <div class="content">
+            <img src="images/s-img-2.jpg" alt="">
+            <h3>Best in Pizza</h3>
+            <p>Experience pizza paradise with our mouthwatering creation. Handcrafted crust, vibrant tomato sauce,
+              melted cheese, and your choice of premium toppings unite in a symphony of flavor that's impossible to
+              resist.</p>
+          </div>
+        </a>
       </div>
-      <!-- contact end -->
 
+      <div class="box">
+        <a href="#Chinese"><img class="image" src="images/noodles1.jpg" alt="">
 
-      <!-- footer -->
-      <footer id="footer"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <h1 class="text-center">Cake Bakery</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium.</p>
-        <div class="icons text-center">
-            <i class="bx bxl-twitter"></i>
-            <i class="bx bxl-facebook"></i>
-            <i class="bx bxl-google"></i>
-            <i class="bx bxl-skype"></i>
-            <i class="bx bxl-instagram"></i>
-        </div>
-        <div class="copyright text-center">
-            &copy; Copyright <strong>Cake Bakery</strong> .All Rights Reserved
-        </div>
-        <div class="credite text-center">
-            Designed By <a href="#"><span>SA coding</span></a>
-        </div>
-      </footer>
-      <!-- footer -->
+          <div class="content">
+            <img src="images/noodles1.jpg" alt="">
+            <h3>Best in Chinese</h3>
+            <p>Satisfy your cravings for authentic Chinese cuisine at its finest. Our dishes are a delectable blend of
+              savory flavors and fresh ingredients, promising a culinary journey to the heart of China with every bite.
+            </p>
+          </div>
+        </a>
+      </div>
 
-      <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
+      <div class="box">
+        <a href="#Shakes"> <img class="image" src="images/choco.jpg" alt="">
 
+          <div class="content">
+            <img src="images/choco.jpg" alt="">
+            <h3>Best in Shakes</h3>
+            <p>Quench your thirst and treat your taste buds to our indulgent shakes. Creamy, dreamy, and available in a
+              variety of irresistible flavors, they're the perfect way to satisfy your sweet cravings and cool down on a
+              hot day.</p>
+          </div>
+      </div></a>
 
+      <div class="box">
+        <a href="#Garlic"> <img class="image" src="images/gb.jpg" alt="">
+
+          <div class="content">
+            <img src="images/gb.jpg" alt="">
+            <h3>Garlic Bread</h3>
+            <p>Experience garlic bread like never before. Our warm, oven-baked slices are generously coated in a
+              mouthwatering blend of garlic, butter, and herbs, delivering a perfect balance of crispy, savory goodness
+              in every bite.</p>
+          </div>
+      </div></a>
+
+      <div class="box">
+        <a href="#Wrap"> <img class="image" src="images/paneerwrap.jpeg" alt="">
+
+          <div class="content">
+            <img src="images/paneerwrap.jpeg" alt="">
+            <h3>Wraps & Parcel</h3>
+            <p>Wrap up your day with our delicious wraps and parcels. Bursting with flavorful fillings, these handheld
+              delights are a convenient and tasty way to enjoy a variety of ingredients, all neatly bundled up for your
+              enjoyment.</p>
+          </div>
+      </div></a>
+
+      <div class="box">
+        <a href="#Snacks"> <img class="image" src="images/bhalle.jpeg" alt="">
+
+          <div class="content">
+            <img src="images/bhalle.jpeg" alt="">
+            <h3>Best in Snacks</h3>
+            <p>Craving a quick pick-me-up? Dive into our tempting snacks. From crunchy to savory, our selection is
+              designed to satisfy your snack-time cravings and keep you energized throughout the day.</p>
+          </div>
+      </div></a>
+
+      <div class="box">
+        <a href="#Momos"> <img class="image" src="images/momo.jpg" alt="Momos Image">
+
+          <div class="content">
+            <img src="images/momo.jpg" alt="Momos Image">
+            <h3>Best in Momos</h3>
+            <p>Savor the taste of the Himalayas with our delectable momos. These delicate, handcrafted dumplings are
+              stuffed with a flavorful blend of ingredients, steamed to perfection, and served with a tantalizing
+              dipping sauce.</p>
+          </div>
+      </div></a>
+
+      <div class="box">
+        <a href="#Chaap"> <img class="image" src="images/chaap1.jpg" alt="Chaap Image">
+
+          <div class="content">
+            <img src="images/chaap1.jpg" alt="Chaap Image">
+            <h3>Best in Chaaps</h3>
+            <p>Indulge in the rich and smoky flavors of our chaap. Marinated to perfection and grilled to a
+              mouthwatering char, our chaap is a vegetarian delight that's sure to satisfy your cravings for bold and
+              savory Indian cuisine.</p>
+          </div>
+      </div></a>
+
+      <div class="box">
+        <a href="#Dinner"> <img class="image" src="images/shahipaneer.jpeg" alt="Chaap Image">
+
+          <div class="content">
+            <img src="images/shahipaneer.jpeg" alt="Chaap Image">
+            <h3>Best in Dinner</h3>
+            <p>Join us for an unforgettable dinner experience. Our carefully crafted menu features a tantalizing array
+              of dishes, each thoughtfully prepared with the finest ingredients to delight your palate and create
+              cherished memories. </p>
+          </div>
+      </div></a>
 
     </div>
 
+  </section>
+
+  <!-- speciality section ends -->
+
+  <!-- Main Menu section starts  -->
+
+  <section class="popular" id="Burger">
+
+    <h1 class="heading"> <span>Burger</span> </h1>
+    <div class="box-container">
+      <div class="Burger">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Sandwich">
+
+    <h1 class="heading"> <span>Sandwich</span> </h1>
+    <div class="box-container">
+      <div class="Sandwich">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Pasta">
+
+    <h1 class="heading"> <span>Pasta</span> </h1>
+    <div class="box-container">
+      <div class="Pasta">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="speciality" id="speciality">
+
+    <h1 class="speciality-heading" id="pizza"> Pizza <span>Category</span></h1>
+
+    <div class="main-box-speciality">
+
+      <div class="box">
+        <a href="#pizza_s"><img class="image" src="images/onion.jpg" alt="">
+
+          <div class="content">
+            <img src="images/onion.jpg" alt="">
+            <h3>Single Topping</h3>
+            <p>Each bite is a delightful symphony of flavors, combining premium ingredients, authentic sauces, and a
+              perfectly baked crust that is crispy on the outside and wonderfully fluffy on the inside.</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="#pizza_d"><img class="image" src="images/onioncapsicum.jpg" alt="">
+
+          <div class="content">
+            <img src="images/onioncapsicum.jpg" alt="">
+            <h3>Double Topping</h3>
+            <p>Each bite is a delightful symphony of flavors, combining premium ingredients, authentic sauces, and a
+              perfectly baked crust that is crispy on the outside and wonderfully fluffy on the inside.</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="#pizza_p"><img class="image" src="images/s-img-2.jpg" alt="">
+
+          <div class="content">
+            <img src="images/s-img-2.jpg" alt="">
+            <h3>Premium Category</h3>
+            <p>Each bite is a delightful symphony of flavors, combining premium ingredients, authentic sauces, and a
+              perfectly baked crust that is crispy on the outside and wonderfully fluffy on the inside.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="popular" id="pizza_s">
+
+    <h1 class="heading"> <span>Single Topping</span> </h1>
+    <div class="box-container">
+      <div class="Single_topping">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="pizza_d">
+
+    <h1 class="heading"> <span>Double Topping</span> </h1>
+    <div class="box-container">
+      <div class="Double_topping">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="pizza_p">
+
+    <h1 class="heading "> <span>Premium Category</span> </h1>
+    <div class="box-container">
+      <div class="Premium">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Chinese">
+
+    <h1 class="heading "> <span>Chinese</span> </h1>
+    <div class="box-container">
+      <div class="Chinese">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Shakes">
+
+    <h1 class="heading"> <span>Shakes</span> </h1>
+    <div class="box-container">
+      <div class="Shakes">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Garlic">
+
+    <h1 class="heading"> <span>Garlic Bread</span> </h1>
+    <div class="box-container">
+      <div class="Garlic">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Wrap">
+
+    <h1 class="heading "> <span>Wrap & Zingy Parcel</span> </h1>
+    <div class="box-container">
+      <div class="Wrap">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Snacks">
+
+    <h1 class="heading "> <span>Snacks</span> </h1>
+    <div class="box-container">
+      <div class="Snacks">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Momos">
+
+    <h1 class="heading "> <span>Momos</span> </h1>
+    <div class="box-container">
+      <div class="Momos">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Chaap">
+
+    <h1 class="heading "> <span>Chaap</span> </h1>
+    <div class="box-container">
+      <div class="Chaap">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="speciality" id="speciality">
+
+    <h1 class="speciality-heading" id="Dinner"><span>Dinner</span></h1>
+
+    <div class="main-box-speciality">
+
+      <div class="box">
+        <a href="#Vegetables"><img class="image" src="images/kadaipaneer.jpeg" alt="">
+
+          <div class="content">
+            <img src="images/kadaipaneer.jpeg" alt="">
+            <h3>Vegetables</h3>
+            <p>Each bite is a delightful symphony of flavors, combining premium ingredients, authentic sauces, and a
+              perfectly baked crust that is crispy on the outside and wonderfully fluffy on the inside.</p>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="#Roti"><img class="image" src="images/butternaan.jpeg" alt="">
+
+          <div class="content">
+            <img src="images/butternaan.jpeg" alt="">
+            <h3>Naan & Roti</h3>
+            <p>Each bite is a delightful symphony of flavors, combining premium ingredients, authentic sauces, and a
+              perfectly baked crust that is crispy on the outside and wonderfully fluffy on the inside.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="popular" id="Vegetables">
+
+    <h1 class="heading"> <span>Vegetables</span> </h1>
+    <div class="box-container">
+      <div class="Vegetables">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="popular" id="Roti">
+
+    <h1 class="heading"> <span>Naan & Roti</span> </h1>
+    <div class="box-container">
+      <div class="Roti">
+
+      </div>
+    </div>
+
+  </section>
 
 
+  <!-- popular section ends -->
+
+  <!-- footer section  -->
+
+  <section class="footer">
+
+    <a href="#">
+      <div class="btn">
+        <h5>Copyright &copy;2020 | FoodiesHub</h5>
+
+      </div>
+    </a>
+  </section>
+
+  <!-- scroll top button  -->
+  <a href="#" class="scroll-down">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- loader  -->
+
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+  <!-- custom js file link  -->
+  <script src="script.js"></script>
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
 </body>
+
 </html>
