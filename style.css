@@ -295,6 +295,7 @@ section {
   text-decoration: line-through;
   margin: 1rem;
   color: grey;
+  font-style: italic;
 }
 .rev{
   background-color: green;
@@ -735,6 +736,12 @@ header img {
   }
   .popup-option{
     font-size: .9rem;
+  }
+  .rev{
+    font-size: 1rem;
+  }
+  .mrp{
+    font-size: 1.5rem;
   }
   .cart-table .header-spaced {
     font-size: 1.8rem;
