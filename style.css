@@ -740,6 +740,9 @@ header img {
   .mrp{
     font-size: 1.5rem;
   }
+  .rev{
+    font-style: 1.2rem;
+  }
   .cart-table .header-spaced {
     font-size: 1.8rem;
     text-align: center;
