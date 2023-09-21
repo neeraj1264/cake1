@@ -148,19 +148,8 @@ section {
   color: #333;
   padding: 1rem 0;
 }
-.home .content_mobile h3 {
+.home .content_mobile {
   display: none;
-  text-align: left;
-  font-size: 5rem;
-  color: #333;
-}
-
-.home .content_mobile p {
-  display: none;
-  text-align: left;
-  font-size: 1.5rem;
-  color: #333;
-  padding: 1rem 0;
 }
 
 .home .image {
@@ -815,9 +804,11 @@ header img {
   }
   .home .content{
     display: none;
-    font-size: 5rem;
-    color: #333;
   }
+  .home .content_mobile {
+    display: block;
+  }
+
   .home .content_mobile h3 {
     display: block;
     text-align: left;
