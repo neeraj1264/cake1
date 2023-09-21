@@ -262,30 +262,46 @@ section {
 
 .popular .box-container .box {
   width: calc(33.33% - 20px);
-  /* Adjust the width as needed */
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 0.1rem solid var(--btn-color);
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  /* border: 0.1rem solid var(--btn-color); */
   cursor: pointer;
   border-radius: 1rem;
-  padding: 2rem;
+   /* padding: 2rem; */
 }
 
-.popular .box-container .box .price {
+.popular .box-container .box .dis {
   position: absolute;
-  left: 3rem;
-  top: 3rem;
-  padding: 0.5rem 1.5rem;
-  font-size: 2rem;
+  right: 0rem;
+  /* top: 3rem; */
+  padding: 0rem .4rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: white;
-  background-color: var(--btn-color);
+  background-color: green;
   border-radius: 10px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
+.pricee{
+  font-size: 2rem;
+}
+.mrp{
+  text-decoration: line-through;
+  margin: 1rem;
+  color: grey;
+}
+.rev{
+  background-color: green;
+  color: white;
+  padding: 0.2rem 1rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  position: absolute;
+  right: 0rem;
+}
 .popular .box-container .box h3 {
   color: #333;
   font-size: 2.5rem;
@@ -341,19 +357,17 @@ section {
 }
 .btn {
   display: inline-block;
-  padding: 0.8rem 3rem;
-  border: 0.2rem solid black;
+  padding: 0.2rem 2rem;
+  /* border: 0.2rem solid black; */
   background: repeating-radial-gradient(black, transparent 100px);
   color: white;
   cursor: pointer;
   font-size: 2rem;
-  border-radius: 3.5rem;
-  position: relative;
+  border-radius: 1.2rem;
   overflow: hidden;
   z-index: 0;
   margin-top: 2rem;
 }
-
 .btn::before {
   content: "";
   position: absolute;
@@ -361,13 +375,13 @@ section {
   right: 0;
   width: 0%;
   height: 100%;
-  background: var(--btn-color);
-  transition: 0.3s linear;
-  z-index: -1;
 }
 
 .btn:hover {
   color: white;
+  background: var(--btn-color);
+  transition: 0.3s linear;
+  z-index: -1;
   border: none
 }
 
@@ -666,7 +680,6 @@ header img {
   .main-box-speciality .box {
     width: calc(47% - 6px);
   }
-
   .main-box-speciality .box p {
     display: none;
   }
@@ -677,23 +690,25 @@ header img {
   .popular .box-container .box {
     width: calc(47% - 6px);
   }
-
+  .popular .box-container .box .dis {
+  font-size: 1.4rem;
+  }
   .popular .box-container .box img {
     height: 12rem;
   }
 
   .popular .box-container .box h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .popular .box-container .box .star i {
     font-size: 1.5rem;
   }
 
-  .popular .box-container .box .price {
+  /* .popular .box-container .box .price {
    padding: .3rem 1rem;
    font-size: 1.5rem;
-  }
+  } */
   .popular .box-container .box .category-dropdown {
     height: 2.5rem;
     width: 4rem;

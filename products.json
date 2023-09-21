@@ -205,18 +205,21 @@
         "id": 21,
         "name": "Aloo Tikki Burger",
         "price": 45,
+        "mrp":120,
         "image": "images/p-1.jpg"
     },
     {
         "id": 22,
         "name": "Veg Cheese Burger",
         "price": 60,
+        "mrp":120,
         "image": "images/p-1.jpg"
     },
     {
         "id": 23,
         "name": "Hangover Burger",
         "price": 70,
+        "mrp":120,
         "image": "images/p-1.jpg"
     },
     {

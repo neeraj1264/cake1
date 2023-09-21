@@ -605,9 +605,14 @@ if (i >= 12 && i < 20) {
 if (i >= 20 && i < 23) {
   Burger += `
 <div class="box" >
-<span class="price product-price"> ₹ ${item.price}</span>
+<span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
 <img src="${item.image}" alt="img">
-<h3 class="product-name" id="1">${item.name}</h3>
+<h3 class="product-name" id="1"><b>${item.name}</b></h3>
+<span class="pricee product-price"> <b>₹ ${item.price}</b> 
+<del class="mrp">₹ ${item.mrp}</del>
+ <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
+ </span>
+
 <div class="stars">
 <i class="fas fa-star"></i>
 <i class="fas fa-star"></i>
