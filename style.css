@@ -148,6 +148,20 @@ section {
   color: #333;
   padding: 1rem 0;
 }
+.home .content_mobile h3 {
+  display: none;
+  text-align: left;
+  font-size: 5rem;
+  color: #333;
+}
+
+.home .content_mobile p {
+  display: none;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #333;
+  padding: 1rem 0;
+}
 
 .home .image {
   flex: 1 1 40rem;
@@ -662,7 +676,7 @@ header img {
 
   .home .image img {
     width: 100%;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
   }
 }
 
@@ -798,7 +812,25 @@ header img {
 
   .home .image img {
     width: 95%;
-    padding-top: 8rem;
+  }
+  .home .content{
+    display: none;
+    font-size: 5rem;
+    color: #333;
+  }
+  .home .content_mobile h3 {
+    display: block;
+    text-align: left;
+    font-size: 5rem;
+    color: black;
+  }
+  
+  .home .content_mobile p {
+    display: block;
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
   }
 }
 
@@ -925,6 +957,13 @@ body.dark-mode .btnn {
 
 body.dark-mode .home {
   background-image: linear-gradient(rgba(7,9,9,9.9),rgba(0,0,0,0.5)), url(images/background2.png);
+}
+body.dark-mode .home .content_mobile h3{
+  color: white;
+}
+
+body.dark-mode .home .content_mobile p{
+  color: white;
 }
 body.dark-mode .popular .box-container .box {
   background-color: #333333;
