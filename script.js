@@ -37,65 +37,65 @@ let cartCount = 0;
 let cartCountElement = document.getElementById("cart-count"); // Declare cartCountElement in the global scope
 
 // Event delegation for "Add to Cart" functionality
-document.querySelector(".Burger").addEventListener("click", (event) => {
+document.querySelector(".bdaycake").addEventListener("click", (event) => {
   handleAddToCartClick(event);
 });
 
-document.querySelector(".Sandwich").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Sandwich").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Pasta").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Pasta").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Single_topping").addEventListener("click", (event) => {
-  handleeAddToCartClick(event);
-});
+// document.querySelector(".Single_topping").addEventListener("click", (event) => {
+//   handleeAddToCartClick(event);
+// });
 
-document.querySelector(".Double_topping").addEventListener("click", (event) => {
-  handleeAddToCartClick(event);
-});
+// document.querySelector(".Double_topping").addEventListener("click", (event) => {
+//   handleeAddToCartClick(event);
+// });
 
-document.querySelector(".Premium").addEventListener("click", (event) => {
-  handleeAddToCartClick(event);
-});
+// document.querySelector(".Premium").addEventListener("click", (event) => {
+//   handleeAddToCartClick(event);
+// });
 
-document.querySelector(".Chinese").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Chinese").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Shakes").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Shakes").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Garlic").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Garlic").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Wrap").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Wrap").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Chaap").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Chaap").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Momos").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Momos").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Snacks").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Snacks").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
-document.querySelector(".Vegetables").addEventListener("click", (event) => {
-  handleeAddToCartClick(event);
-});
+// document.querySelector(".Vegetables").addEventListener("click", (event) => {
+//   handleeAddToCartClick(event);
+// });
 
-document.querySelector(".Roti").addEventListener("click", (event) => {
-  handleAddToCartClick(event);
-});
+// document.querySelector(".Roti").addEventListener("click", (event) => {
+//   handleAddToCartClick(event);
+// });
 
 function handleAddToCartClick(event) {
   const button = event.target.closest(".add-to-cart");
@@ -110,27 +110,27 @@ function handleAddToCartClick(event) {
     cartCountElement.textContent = cartCount;
   }
 }
-function handleeAddToCartClick(event) {
-  const btnn = event.target.closest(".btnn");
+// function handleeAddToCartClick(event) {
+//   const btnn = event.target.closest(".btnn");
 
-  if (btnn) {
-    const newButtonsContainer = btnn.parentNode.querySelector('.new-buttons');
+//   if (btnn) {
+//     const newButtonsContainer = btnn.parentNode.querySelector('.new-buttons');
 
-    btnn.style.display = "none";
-    // goButtonContainer.style.display = "none";
-    newButtonsContainer.style.display = "flex";
-  }
-  const newButtonsContainer = event.target.closest(".new-buttons");
+//     btnn.style.display = "none";
+//     // goButtonContainer.style.display = "none";
+//     newButtonsContainer.style.display = "flex";
+//   }
+//   const newButtonsContainer = event.target.closest(".new-buttons");
 
-  if (newButtonsContainer) {
-    const goButtonContainer = newButtonsContainer.parentNode.querySelector(".Go-to-Cart , .add-to-cart");
+//   if (newButtonsContainer) {
+//     const goButtonContainer = newButtonsContainer.parentNode.querySelector(".Go-to-Cart , .add-to-cart");
 
-    newButtonsContainer.style.display = "none";
-    goButtonContainer.style.display = "flex";
-    cartCount++;
-    cartCountElement.textContent = cartCount;
-  }
-}
+//     newButtonsContainer.style.display = "none";
+//     goButtonContainer.style.display = "flex";
+//     cartCount++;
+//     cartCountElement.textContent = cartCount;
+//   }
+// }
 
 // ---------------------cart Data code-----------------------------
 
@@ -510,7 +510,7 @@ http.send();
 http.onload = function () {
   if (this.readyState == 4 && this.status == 200) {
 let products = JSON.parse(this.responseText);
-let Burger = "";
+let bdaycake = "";
 let Sandwich = "";
 let Pasta = "";
 let Single = "";
@@ -603,7 +603,7 @@ if (i >= 12 && i < 20) {
   `;
 }
 if (i >= 20 && i < 23) {
-  Burger += `
+  bdaycake += `
 <div class="box" >
 <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
 <img src="${item.image}" alt="img">
@@ -881,21 +881,21 @@ if (i >= 87 && i < 99) {
   `;
 }
 }
-document.querySelector(".Burger").innerHTML = Burger;
-document.querySelector(".Sandwich").innerHTML = Sandwich;
-document.querySelector(".Pasta").innerHTML = Pasta;
-document.querySelector(".Single_topping").innerHTML = Single;
-document.querySelector(".Double_topping").innerHTML = Double;
-document.querySelector(".Premium").innerHTML = Premium;
-document.querySelector(".Chinese").innerHTML = Chinese;
-document.querySelector(".Shakes").innerHTML = Shakes;
-document.querySelector(".Garlic").innerHTML = Garlic;
-document.querySelector(".Wrap").innerHTML = Wrap;
-document.querySelector(".Chaap").innerHTML = Chaap;
-document.querySelector(".Momos").innerHTML = Momos;
-document.querySelector(".Snacks").innerHTML = Snacks;
-document.querySelector(".Vegetables").innerHTML = Vegetables;
-document.querySelector(".Roti").innerHTML = Roti;
+document.querySelector(".bdaycake").innerHTML = bdaycake;
+// document.querySelector(".Sandwich").innerHTML = Sandwich;
+// document.querySelector(".Pasta").innerHTML = Pasta;
+// document.querySelector(".Single_topping").innerHTML = Single;
+// document.querySelector(".Double_topping").innerHTML = Double;
+// document.querySelector(".Premium").innerHTML = Premium;
+// document.querySelector(".Chinese").innerHTML = Chinese;
+// document.querySelector(".Shakes").innerHTML = Shakes;
+// document.querySelector(".Garlic").innerHTML = Garlic;
+// document.querySelector(".Wrap").innerHTML = Wrap;
+// document.querySelector(".Chaap").innerHTML = Chaap;
+// document.querySelector(".Momos").innerHTML = Momos;
+// document.querySelector(".Snacks").innerHTML = Snacks;
+// document.querySelector(".Vegetables").innerHTML = Vegetables;
+// document.querySelector(".Roti").innerHTML = Roti;
 }
 };
 
