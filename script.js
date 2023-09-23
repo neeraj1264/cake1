@@ -560,19 +560,16 @@ if ( i < 10) {
  <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
  </span>
 
-<div class="stars">
+<div class="stars"></div>
+<div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
+  <select class="size" id="dropdown-options-${item.id}">
+    <option value="[2 Pound ]">[2 Pound ] - ₹250</option>
+    <option value="[3 Pound ]">[3 Pound ] - ₹350</option>
+    <option value="[4 Pound ]">[4 Pound ] - ₹450</option>
+  </select><br><br>
+</div>
+<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
 
-</div>
-<h1 class="btn add-to-cart" onclick="showDropdown('${item.id}')">ADD</h1>
-<div class="dropdown" id="dropdown-${item.id}" style="display: none;">
-  <select id="dropdown-options-${item.id}">
-    <option value="regular">Regular - ₹120</option>
-    <option value="medium">Medium - ₹220</option>
-    <option value="large">Large - ₹330</option>
-  </select>
-  <button class="btn btn-ok" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">OK</button>
-  <button class="btn btn-cancel" onclick="hideDropdown('${item.id}')">Cancel</button>
-</div>
 <div class="Go-to-Cart" style="display: none;">
 <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
 </div>
@@ -592,10 +589,15 @@ if (i >= 10 && i < 14) {
    <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
    </span>
   
-  <div class="stars">
-  
-  </div>
-  <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
+  <div class="stars"></div>
+  <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
+  <select class="size" id="dropdown-options-${item.id}">
+    <option value="[3 Pound ]">[3 Pound ] - ₹350</option>
+    <option value="[4 Pound ]">[4 Pound ] - ₹450</option>
+    <option value="[5 Pound ]">[5 Pound ] - ₹550</option>
+  </select><br><br>
+</div>
+<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
   <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
@@ -616,11 +618,16 @@ if (i >= 14 && i < 21 ) {
    <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
    </span>
   
-  <div class="stars">
-  
-  </div>
-  <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
-  <div class="Go-to-Cart" style="display: none;">
+   <div class="stars"></div>
+  <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
+  <select class="size" id="dropdown-options-${item.id}">
+    <option value="[3 Pound ]">[3 Pound ] - ₹350</option>
+    <option value="[4 Pound ]">[4 Pound ] - ₹450</option>
+    <option value="[5 Pound ]">[5 Pound ] - ₹550</option>
+  </select><br><br>
+</div>
+<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
+ <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
   
@@ -634,17 +641,22 @@ if (i >= 21 && i < 26) {
     <div class="box" >
     <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
     <img src="${item.image}" alt="img">
-    <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 3 Pound ]</h5>
+    <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 2 Pound ]</h5>
     <span class="pricee product-price"> <b>₹ ${item.price}</b> 
     <del class="mrp">₹ ${item.mrp}</del>
      <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
      </span>
     
-    <div class="stars">
-    
-    </div>
-    <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
-    <div class="Go-to-Cart" style="display: none;">
+     <div class="stars"></div>
+     <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
+     <select class="size" id="dropdown-options-${item.id}">
+       <option value="[2 Pound ]">[2 Pound ] - ₹380</option>
+       <option value="[3 Pound ]">[3 Pound ] - ₹480</option>
+       <option value="[4 Pound ]">[4 Pound ] - ₹580</option>
+     </select><br><br>
+   </div>
+   <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
+      <div class="Go-to-Cart" style="display: none;">
     <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
     </div>
     
@@ -664,11 +676,16 @@ if (i >= 26 && i < 31) {
    <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
    </span>
   
-  <div class="stars">
-  
-  </div>
-  <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
-  <div class="Go-to-Cart" style="display: none;">
+   <div class="stars"></div>
+   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
+   <select class="size" id="dropdown-options-${item.id}">
+     <option value="[3 Pound ]">[5 Pound ] - ₹600</option>
+     <option value="[4 Pound ]">[6 Pound ] - ₹700</option>
+     <option value="[5 Pound ]">[7 Pound ] - ₹800</option>
+   </select><br><br>
+ </div>
+ <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
+   <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
   
@@ -688,11 +705,9 @@ if (i >= 31 && i < 42) {
    <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
    </span>
   
-  <div class="stars">
-  
-  </div>
-  <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
-  <div class="Go-to-Cart" style="display: none;">
+  <div class="stars"> </div>
+ <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
+    <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
   

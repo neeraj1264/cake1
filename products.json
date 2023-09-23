@@ -99,49 +99,49 @@
     },
     {
         "id": 15,
-        "name": "Anniversary Cake",
+        "name": "Heart Cake",
         "price": 350,
         "mrp":400,
         "image": "images/h2.jpeg"
     },
     {
         "id": 16,
-        "name": "Anniversary Cake",
+        "name": "Heart Cake",
         "price": 350,
         "mrp":400,
         "image": "images/h3.jpeg"
     },
     {
         "id": 17,
-        "name": "Anniversary Cake",
+        "name": "Heart Cake",
         "price": 350,
         "mrp":400,
         "image": "images/h4.jpeg"
     },
     {
         "id": 18,
-        "name": "Anniversary Cake",
+        "name": "Heart Cake",
         "price": 350,
         "mrp":400,
         "image": "images/h5.jpeg"
     },
     {
         "id": 19,
-        "name": "Anniversary Cake",
+        "name": "Heart Cake",
         "price": 350,
         "mrp":400,
         "image": "images/h6.jpeg"
     },
     {
         "id": 20,
-        "name": "Anniversary Cake",
+        "name": "Heart Cake",
         "price": 350,
         "mrp":400,
         "image": "images/h7.jpeg"
     },
     {
         "id": 21,
-        "name": "Anniversary Cake",
+        "name": "Heart Cake",
         "price": 350,
         "mrp":400,
         "image": "images/h8.jpeg"
@@ -149,71 +149,71 @@
     {
         "id": 22,
         "name": "Fruit Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 380,
+        "mrp":500,
         "image": "images/f1.jpeg"
     },
     {
         "id": 23,
         "name": "Fruit Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 380,
+        "mrp":500,
         "image": "images/f2.jpeg"
     },
     {
         "id": 24,
         "name": "Fruit Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 380,
+        "mrp":500,
         "image": "images/f3.jpeg"
     },
     {
         "id": 25,
         "name": "Fruit Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 380,
+        "mrp":500,
         "image": "images/f1.jpeg"
     },
     {
         "id": 26,
         "name": "Fruit Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 380,
+        "mrp":500,
         "image": "images/f2.jpeg"
     },
     {
         "id": 27,
         "name": "Doll Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 600,
+        "mrp":750,
         "image": "images/doll.jpg"
     },
     {
         "id": 28,
         "name": "Doll Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 600,
+        "mrp":750,
         "image": "images/doll2.jpg"
     },
     {
         "id": 29,
         "name": "Doll Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 600,
+        "mrp":750,
         "image": "images/doll3.jpg"
     },
     {
         "id": 30,
         "name": "Doll Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 600,
+        "mrp":750,
         "image": "images/doll4.jpg"
     },
     {
         "id": 31,
         "name": "Doll Cake",
-        "price": 350,
-        "mrp":400,
+        "price": 600,
+        "mrp":750,
         "image": "images/doll5.jpg"
     },
     {
