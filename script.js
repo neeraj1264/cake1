@@ -41,25 +41,25 @@ document.querySelector(".bdaycake").addEventListener("click", (event) => {
   handleAddToCartClick(event);
 });
 
-// document.querySelector(".Sandwich").addEventListener("click", (event) => {
-//   handleAddToCartClick(event);
-// });
+document.querySelector(".anicake").addEventListener("click", (event) => {
+  handleAddToCartClick(event);
+});
 
-// document.querySelector(".Pasta").addEventListener("click", (event) => {
-//   handleAddToCartClick(event);
-// });
+document.querySelector(".heart").addEventListener("click", (event) => {
+  handleAddToCartClick(event);
+});
 
-// document.querySelector(".Single_topping").addEventListener("click", (event) => {
-//   handleeAddToCartClick(event);
-// });
+document.querySelector(".fruit").addEventListener("click", (event) => {
+  handleAddToCartClick(event);
+});
 
-// document.querySelector(".Double_topping").addEventListener("click", (event) => {
-//   handleeAddToCartClick(event);
-// });
+document.querySelector(".doll").addEventListener("click", (event) => {
+  handleAddToCartClick(event);
+});
 
-// document.querySelector(".Premium").addEventListener("click", (event) => {
-//   handleeAddToCartClick(event);
-// });
+document.querySelector(".multi").addEventListener("click", (event) => {
+  handleAddToCartClick(event);
+});
 
 // document.querySelector(".Chinese").addEventListener("click", (event) => {
 //   handleAddToCartClick(event);
@@ -511,11 +511,11 @@ http.onload = function () {
   if (this.readyState == 4 && this.status == 200) {
 let products = JSON.parse(this.responseText);
 let bdaycake = "";
-let Sandwich = "";
-let Pasta = "";
-let Single = "";
-let Double = "";
-let Premium = "";
+let anicake = "";
+let heart = "";
+let fruit = "";
+let doll = "";
+let multi = "";
 let Chinese = "";
 let Shakes = "";
 let Garlic = "";
@@ -527,87 +527,12 @@ let Chaap = "";
 let Momos = "";
 for (let i = 0; i < products.length; i++) {
 const item = products[i];
-if (i < 6) {
-  Single += `
-  <div class="box" >
-  <span class="price product-price"> ₹ ${item.price.Small}</span>
-  <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1">${item.name}</h3>
-  <div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  </div>
-  <h2 class="btnn">ADD</h2>
-    <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  <div class="new-buttons" style="display: none;">
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Small]', ${item.price.Small}, '${item.image}')"><h2>Small ${item.price.Small}/-</h2></button>
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Regular]', ${item.price.Regular}, '${item.image}')"><h2>Regular ${item.price.Regular}/-</h2></button>
-</div>
-  </div>
-  `;
-}
-if (i >= 6 && i < 12) {
-  Double += `
-  <div class="box" >
-  <span class="price product-price"> ₹ ${item.price.Small}</span>
-  <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1">${item.name}</h3>
-  <div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  </div>
-  <h2 class="btnn">ADD</h2>
-    <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  <div class="new-buttons" style="display: none;">
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Small]', ${item.price.Small}, '${item.image}')"><h2>Small ${item.price.Small}/-</h2></button>
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Regular]', ${item.price.Regular}, '${item.image}')"><h2>Reg ${item.price.Regular}/-</h2></button>
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Medium]', ${item.price.Medium}, '${item.image}')"><h2>Med ${item.price.Medium}/-</h2></button>
-</div>
-  </div>
-  `;
-}
-if (i >= 12 && i < 20) {
-  Premium += `
-  <div class="box" >
-  <span class="price product-price"> ₹ ${item.price.Regular}</span>
-  <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1">${item.name}</h3>
-  <div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  </div>
-  <p>${item.p}</p>
-  <h2 class="btnn">ADD</h2>
-    <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  <div class="new-buttons" style="display: none;">
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Regular]', ${item.price.Regular}, '${item.image}')"><h2>Reg ${item.price.Regular}/-</h2></button>
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Medium]', ${item.price.Medium}, '${item.image}')"><h2>Med ${item.price.Medium}/-</h2></button>
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Large]', ${item.price.Large}, '${item.image}')"><h2>Large ${item.price.Large}/-</h2></button>
-</div>
-  </div>
-  `;
-}
-if (i >= 20 && i < 23) {
+if ( i < 10) {
   bdaycake += `
 <div class="box" >
 <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
 <img src="${item.image}" alt="img">
-<h3 class="product-name" id="1"><b>${item.name}</b></h3>
+<h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 2 Pound ]</h5>
 <span class="pricee product-price"> <b>₹ ${item.price}</b> 
 <del class="mrp">₹ ${item.mrp}</del>
  <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
@@ -626,43 +551,45 @@ if (i >= 20 && i < 23) {
 </div>
 `;
 }
-if (i >= 23 && i < 27) {
-  Sandwich += `
-<div class="box" >
-<span class="price product-price"> ₹ ${item.price}</span>
-<img src="${item.image}" alt="img">
-<h3 class="product-name" id="1">${item.name}</h3>
-<div class="stars">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-<h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
-<div class="Go-to-Cart" style="display: none;">
-<h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-</div>
-
-</div>
-</div>
-</div>
-`;
-}
-if (i >= 27 && i < 30 || i === 68 || i === 69) {
-  Wrap += `
+if (i >= 10 && i < 14) {
+  anicake += `
   <div class="box" >
-  <span class="price product-price"> ₹ ${item.price}</span>
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1">${item.name}</h3>
+  <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 3 Pound ]</h5>
+  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
+  <del class="mrp">₹ ${item.mrp}</del>
+   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
+   </span>
+  
   <div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
+  
   </div>
-  <h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
+  <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
+  <div class="Go-to-Cart" style="display: none;">
+  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  `;
+}
+if (i >= 14 && i < 21 ) {
+  heart += `
+  <div class="box" >
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+  <img src="${item.image}" alt="img">
+  <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 3 Pound ]</h5>
+  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
+  <del class="mrp">₹ ${item.mrp}</del>
+   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
+   </span>
+  
+  <div class="stars">
+  
+  </div>
+  <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
   <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
@@ -672,20 +599,21 @@ if (i >= 27 && i < 30 || i === 68 || i === 69) {
   </div>
   `;
   }
-if (i >= 30 && i < 33) {
-    Garlic += `
-      <div class="box" >
-     <span class="price product-price"> ₹ ${item.price}</span>
-     <img src="${item.image}" alt="img">
-     <h3 class="product-name" id="1">${item.name}</h3>
-     <div class="stars">
-     <i class="fas fa-star"></i>
-     <i class="fas fa-star"></i>
-     <i class="fas fa-star"></i>
-     <i class="fas fa-star"></i>
-     <i class="fas fa-star"></i>
+if (i >= 21 && i < 26) {
+    fruit += `
+    <div class="box" >
+    <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+    <img src="${item.image}" alt="img">
+    <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 3 Pound ]</h5>
+    <span class="pricee product-price"> <b>₹ ${item.price}</b> 
+    <del class="mrp">₹ ${item.mrp}</del>
+     <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
+     </span>
+    
+    <div class="stars">
+    
     </div>
-    <h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
+    <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
     <div class="Go-to-Cart" style="display: none;">
     <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
     </div>
@@ -695,20 +623,21 @@ if (i >= 30 && i < 33) {
     </div>
     `;
 }
-if (i >= 33 && i < 38) {
-  Pasta += `
-    <div class="box" >
-   <span class="price product-price"> ₹ ${item.price}</span>
-   <img src="${item.image}" alt="img">
-   <h3 class="product-name" id="1">${item.name}</h3>
-   <div class="stars">
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
+if (i >= 26 && i < 31) {
+  doll +=`
+  <div class="box" >
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+  <img src="${item.image}" alt="img">
+  <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 5 Pound ]</h5>
+  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
+  <del class="mrp">₹ ${item.mrp}</del>
+   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
+   </span>
+  
+  <div class="stars">
+  
   </div>
-  <h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
+  <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
   <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
@@ -716,22 +645,23 @@ if (i >= 33 && i < 38) {
   </div>
   </div>
   </div>
-  `;
+  `; 
 }
-if (i >= 38 && i < 44) {
-  Shakes += `
+if (i >= 31 && i < 42) {
+  multi += `
   <div class="box" >
-  <span class="price product-price"> ₹ ${item.price}</span>
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1">${item.name}</h3>
+  <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 10 Pound ]</h5>
+  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
+  <del class="mrp">₹ ${item.mrp}</del>
+   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
+   </span>
+  
   <div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
+  
   </div>
-  <h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
+  <h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
   <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
@@ -882,11 +812,11 @@ if (i >= 87 && i < 99) {
 }
 }
 document.querySelector(".bdaycake").innerHTML = bdaycake;
-// document.querySelector(".Sandwich").innerHTML = Sandwich;
-// document.querySelector(".Pasta").innerHTML = Pasta;
-// document.querySelector(".Single_topping").innerHTML = Single;
-// document.querySelector(".Double_topping").innerHTML = Double;
-// document.querySelector(".Premium").innerHTML = Premium;
+document.querySelector(".anicake").innerHTML = anicake;
+document.querySelector(".heart").innerHTML = heart;
+document.querySelector(".fruit").innerHTML = fruit;
+document.querySelector(".doll").innerHTML = doll;
+document.querySelector(".multi").innerHTML = multi;
 // document.querySelector(".Chinese").innerHTML = Chinese;
 // document.querySelector(".Shakes").innerHTML = Shakes;
 // document.querySelector(".Garlic").innerHTML = Garlic;

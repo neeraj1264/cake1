@@ -200,7 +200,7 @@ section {
   border: 0.1rem solid var(--btn-color);
   cursor: pointer;
   border-radius: 1rem;
-  max-height: 32rem;
+  max-height: 38rem;
 }
 
 .main-box-speciality .box .image {
@@ -223,7 +223,7 @@ section {
 }
 
 .main-box-speciality .box .content img {
-  margin: 1.5rem 0;
+  margin: 1.5rem 1rem;
 }
 
 .speciality .main-box-speciality .box .content h3 {
@@ -244,13 +244,11 @@ section {
 }
 
 .bdaycake,
-.Sandwich,
-.Pasta,
-.Single_topping,
-.Double_topping,
-.Premium,
-.Chinese,
-.Shakes,
+.anicake,
+.heart,
+.fruit,
+.doll,
+.multi,
 .Garlic,
 .Wrap,
 .Snacks,
@@ -473,8 +471,8 @@ section {
 }
 
 .content img {
-  height: 66px;
-  width: 100px;
+  height: 107px;
+  width: 106px;
 }
 
 header img {
@@ -688,7 +686,7 @@ header img {
     display: none;
   }
   .main-box-speciality .box .content{
-    height: 22rem;
+    height: 24rem;
   }
 
   .popular .box-container .box {
