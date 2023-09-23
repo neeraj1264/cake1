@@ -476,7 +476,7 @@ function closeCartModal() {
 
 function addToCart(id, name, price, image, quantity) {
   if (cartData.hasOwnProperty(id)) {
-    cartData[id].quantity += 1;
+    cartData[id].quantity ++;
   } else {
     cartData[id] = {
       name: name,
@@ -488,6 +488,28 @@ function addToCart(id, name, price, image, quantity) {
 
   updateCartCount();
 }
+
+function showDropdown(itemId) {
+  const dropdown = document.getElementById(`dropdown-${itemId}`);
+  dropdown.style.display = "block";
+}
+
+function hideDropdown(itemId) {
+  const dropdown = document.getElementById(`dropdown-${itemId}`);
+  dropdown.style.display = "none";
+}
+
+function addToCartWithSize(id, name, image) {
+  const dropdown = document.getElementById(`dropdown-options-${id}`);
+  const selectedOption = dropdown.options[dropdown.selectedIndex].text;
+  const size = selectedOption.split("-")[0].trim();
+  const price = parseInt(selectedOption.split("₹")[1]);
+
+  // You can add the selected size and price to the cartData object
+  addToCart(id, `${name} (${size})`, price, image);
+  hideDropdown(id);
+}
+
 
 function updateCartCount() {
   const cartCountElement = document.getElementById("cart-count");
@@ -541,11 +563,19 @@ if ( i < 10) {
 <div class="stars">
 
 </div>
-<h1 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h1>
+<h1 class="btn add-to-cart" onclick="showDropdown('${item.id}')">ADD</h1>
+<div class="dropdown" id="dropdown-${item.id}" style="display: none;">
+  <select id="dropdown-options-${item.id}">
+    <option value="regular">Regular - ₹120</option>
+    <option value="medium">Medium - ₹220</option>
+    <option value="large">Large - ₹330</option>
+  </select>
+  <button class="btn btn-ok" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">OK</button>
+  <button class="btn btn-cancel" onclick="hideDropdown('${item.id}')">Cancel</button>
+</div>
 <div class="Go-to-Cart" style="display: none;">
 <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
 </div>
-
 </div>
 </div>
 </div>
