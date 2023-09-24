@@ -507,7 +507,7 @@ function addToCartWithSize(id, name, image) {
 
   // You can add the selected size and price to the cartData object
   addToCart(id, `${name} (${size})`, price, image);
-  hideDropdown(id);
+  // hideDropdown(id);
 }
 
 
@@ -554,12 +554,7 @@ if ( i < 10) {
 <div class="box" >
 <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
 <img src="${item.image}" alt="img">
-<h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 2 Pound ]</h5>
-<span class="pricee product-price"> <b>₹ ${item.price}</b> 
-<del class="mrp">₹ ${item.mrp}</del>
- <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
- </span>
-
+<h3 class="product-name" id="1"><b>${item.name}</b></h3>
 <div class="stars"></div>
 <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
@@ -583,11 +578,7 @@ if (i >= 10 && i < 14) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 3 Pound ]</h5>
-  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
-  <del class="mrp">₹ ${item.mrp}</del>
-   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
-   </span>
+  <h3 class="product-name" id="1"><b>${item.name}</b></h3>
   
   <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
@@ -612,12 +603,7 @@ if (i >= 14 && i < 21 ) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 3 Pound ]</h5>
-  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
-  <del class="mrp">₹ ${item.mrp}</del>
-   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
-   </span>
-  
+  <h3 class="product-name" id="1"><b>${item.name}</b></h3>
    <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
@@ -641,12 +627,7 @@ if (i >= 21 && i < 26) {
     <div class="box" >
     <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
     <img src="${item.image}" alt="img">
-    <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 2 Pound ]</h5>
-    <span class="pricee product-price"> <b>₹ ${item.price}</b> 
-    <del class="mrp">₹ ${item.mrp}</del>
-     <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
-     </span>
-    
+    <h3 class="product-name" id="1"><b>${item.name}</b></h3>
      <div class="stars"></div>
      <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
      <select class="size" id="dropdown-options-${item.id}">
@@ -670,12 +651,7 @@ if (i >= 26 && i < 31) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 5 Pound ]</h5>
-  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
-  <del class="mrp">₹ ${item.mrp}</del>
-   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
-   </span>
-  
+  <h3 class="product-name" id="1"><b>${item.name}</b></h3>
    <div class="stars"></div>
    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
    <select class="size" id="dropdown-options-${item.id}">
@@ -699,12 +675,7 @@ if (i >= 31 && i < 42) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1"><b>${item.name}</b></h3><h5>[ 10 Pound ]</h5>
-  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
-  <del class="mrp">₹ ${item.mrp}</del>
-   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
-   </span>
-  
+  <h3 class="product-name" id="1"><b>${item.name}</b></h3>
   <div class="stars"> </div>
  <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
     <div class="Go-to-Cart" style="display: none;">
