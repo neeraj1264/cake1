@@ -25,7 +25,7 @@ navbarItems.forEach(item => {
 
 // sr.reveal(".myimage", { delay: 350, origin: "left" });
 // sr.reveal(".home .content", { delay: 350, origin: "right" });
-// sr.reveal(".speciality", { delay: 350, origin: "top" });
+// sr.reveal(".menu", { delay: 350, origin: "top" });
 // sr.reveal(".popular", { delay: 350, origin: "bottom" });
 // sr.reveal(".review .box", { delay: 350, origin: "top" });
 // sr.reveal(".myform", { delay: 350, origin: "bottom" });
@@ -552,15 +552,15 @@ const item = products[i];
 if ( i < 10) {
   bdaycake += `
 <div class="box" >
-<span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+<span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
 <img src="${item.image}" alt="img">
 <h3 class="product-name" id="1"><b>${item.name}</b></h3>
 <div class="stars"></div>
 <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
-    <option value="[2 Pound ]">[2 Pound ] - ₹250</option>
-    <option value="[3 Pound ]">[3 Pound ] - ₹350</option>
-    <option value="[4 Pound ]">[4 Pound ] - ₹450</option>
+    <option value="[2 Pound ]">[2 Pound ] - ₹${item.price.two}</option>
+    <option value="[3 Pound ]">[3 Pound ] - ₹${item.price.three}</option>
+    <option value="[4 Pound ]">[4 Pound ] - ₹${item.price.four}</option>
   </select><br><br>
 </div>
 <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -576,16 +576,16 @@ if ( i < 10) {
 if (i >= 10 && i < 14) {
   anicake += `
   <div class="box" >
-  <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
   <h3 class="product-name" id="1"><b>${item.name}</b></h3>
   
   <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
-    <option value="[3 Pound ]">[3 Pound ] - ₹350</option>
-    <option value="[4 Pound ]">[4 Pound ] - ₹450</option>
-    <option value="[5 Pound ]">[5 Pound ] - ₹550</option>
+  <option value="[3 Pound ]">[3 Pound ] - ₹${item.price.three}</option>
+  <option value="[4 Pound ]">[4 Pound ] - ₹${item.price.four}</option>
+  <option value="[5 Pound ]">[5 Pound ] - ₹${item.price.five}</option>
   </select><br><br>
 </div>
 <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -601,15 +601,15 @@ if (i >= 10 && i < 14) {
 if (i >= 14 && i < 21 ) {
   heart += `
   <div class="box" >
-  <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
   <h3 class="product-name" id="1"><b>${item.name}</b></h3>
    <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
-    <option value="[3 Pound ]">[3 Pound ] - ₹350</option>
-    <option value="[4 Pound ]">[4 Pound ] - ₹450</option>
-    <option value="[5 Pound ]">[5 Pound ] - ₹550</option>
+  <option value="[3 Pound ]">[3 Pound ] - ₹${item.price.three}</option>
+  <option value="[4 Pound ]">[4 Pound ] - ₹${item.price.four}</option>
+  <option value="[5 Pound ]">[5 Pound ] - ₹${item.price.five}</option>
   </select><br><br>
 </div>
 <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -625,15 +625,15 @@ if (i >= 14 && i < 21 ) {
 if (i >= 21 && i < 26) {
     fruit += `
     <div class="box" >
-    <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+    <span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
     <img src="${item.image}" alt="img">
     <h3 class="product-name" id="1"><b>${item.name}</b></h3>
      <div class="stars"></div>
      <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
      <select class="size" id="dropdown-options-${item.id}">
-       <option value="[2 Pound ]">[2 Pound ] - ₹380</option>
-       <option value="[3 Pound ]">[3 Pound ] - ₹480</option>
-       <option value="[4 Pound ]">[4 Pound ] - ₹580</option>
+     <option value="[2 Pound ]">[2 Pound ] - ₹${item.price.two}</option>
+     <option value="[3 Pound ]">[3 Pound ] - ₹${item.price.three}</option>
+     <option value="[4 Pound ]">[4 Pound ] - ₹${item.price.four}</option>
      </select><br><br>
    </div>
    <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -649,15 +649,15 @@ if (i >= 21 && i < 26) {
 if (i >= 26 && i < 31) {
   doll +=`
   <div class="box" >
-  <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.five) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
   <h3 class="product-name" id="1"><b>${item.name}</b></h3>
    <div class="stars"></div>
    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
    <select class="size" id="dropdown-options-${item.id}">
-     <option value="[3 Pound ]">[5 Pound ] - ₹600</option>
-     <option value="[4 Pound ]">[6 Pound ] - ₹700</option>
-     <option value="[5 Pound ]">[7 Pound ] - ₹800</option>
+   <option value="[5 Pound ]">[5 Pound ] - ₹${item.price.five}</option>
+   <option value="[6 Pound ]">[6 Pound ] - ₹${item.price.six}</option>
+   <option value="[7 Pound ]">[7 Pound ] - ₹${item.price.seven}</option>
    </select><br><br>
  </div>
  <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -676,6 +676,10 @@ if (i >= 31 && i < 42) {
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
   <h3 class="product-name" id="1"><b>${item.name}</b></h3>
+  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
+  <del class="mrp">₹ ${item.mrp}</del>
+   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
+   </span>
   <div class="stars"> </div>
  <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
     <div class="Go-to-Cart" style="display: none;">

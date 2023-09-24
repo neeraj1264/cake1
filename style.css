@@ -174,24 +174,24 @@ section {
   }
 }
 
-.speciality-heading {
+.menu-heading {
   font-size: 40px;
   padding: 1.5rem 0;
   text-align: center;
   color: #333;
 }
 
-.speciality-heading span {
+.menu-heading span {
   color: #e58f00;
 }
 
-.main-box-speciality {
+.main-box-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-.main-box-speciality .box {
+.main-box-menu .box {
   width: calc(33.33% - 20px);
   margin-bottom: 20px;
   position: relative;
@@ -203,7 +203,7 @@ section {
   max-height: 38rem;
 }
 
-.main-box-speciality .box .image {
+.main-box-menu .box .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -212,26 +212,26 @@ section {
   left: 0;
 }
 
-.main-box-speciality .box:hover .image {
+.main-box-menu .box:hover .image {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.main-box-speciality .box .content {
+.main-box-menu .box .content {
   background: white;
   text-align: center;
   padding: 2rem;
 }
 
-.main-box-speciality .box .content img {
+.main-box-menu .box .content img {
   margin: 1.5rem 1rem;
 }
 
-.speciality .main-box-speciality .box .content h3 {
+.menu .main-box-menu .box .content h3 {
   font-size: 2.5rem;
   color: #333;
 }
 
-.speciality .main-box-speciality .box .content p {
+.menu .main-box-menu .box .content p {
   font-size: 1.6rem;
   color: #666;
   padding: 1rem 0;
@@ -672,20 +672,20 @@ header img {
   html {
     font-size: 50%;
   }
-.popular, .speciality{
+.popular, .menu{
   padding: 2rem;
 }
   #menu-bars {
     display: initial;
   }
 
-  .main-box-speciality .box {
+  .main-box-menu .box {
     width: calc(47% - 6px);
   }
-  .main-box-speciality .box p {
+  .main-box-menu .box p {
     display: none;
   }
-  .main-box-speciality .box .content{
+  .main-box-menu .box .content{
     height: 24rem;
   }
 
@@ -930,7 +930,7 @@ body.dark-mode {
   background-color: #333333;
   color: white;
 }
-body.dark-mode .speciality-heading {
+body.dark-mode .menu-heading {
   color: white;
 }
 body.dark-mode .popup-option {
@@ -1003,15 +1003,15 @@ body.dark-mode .dropdown-content {
   color: white;
 }
 
-body.dark-mode .main-box-speciality .box .content {
+body.dark-mode .main-box-menu .box .content {
   background: black
 }
 
-body.dark-mode .speciality {
+body.dark-mode .menu {
   background-color: #333333; 
 }
 
-body.dark-mode .speciality .main-box-speciality .box .content h3 {
+body.dark-mode .menu .main-box-menu .box .content h3 {
   color: white
 }
 
@@ -1044,6 +1044,7 @@ body.dark-mode .header a:hover {
 }
 
 .dark-mode-toggle #mode-icon {
+  cursor: pointer;
   font-size: 3rem;
 }
 body.dark-mode .size{
