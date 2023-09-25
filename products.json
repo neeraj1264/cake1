@@ -128,7 +128,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"a1",
         "image":  "images/a2.png"
         },
     {
@@ -139,8 +139,8 @@
             "four": 520,
             "five": 620
                 },
-        "mrp":400,
-        "code":"1",
+        "mrp":450,
+        "code":"a2",
         "image":  "images/a3.png"
     },
     {
@@ -152,7 +152,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"a3",
         "image":  "images/a4.png"
     },
     {
@@ -164,7 +164,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"a4",
         "image":  "images/a5.png"
     },
     {
@@ -176,7 +176,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"h1",
         "image":  "images/h8.png"
     },
     {
@@ -188,7 +188,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"h2",
         "image":  "images/h3.png"
     },
     {
@@ -200,7 +200,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"h3",
         "image":  "images/a1.png"
     },
     {
@@ -212,7 +212,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"h4",
         "image":  "images/a5.png"
     },
     {
@@ -224,7 +224,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"h5",
         "image":  "images/a2.png"
     },
     {
@@ -236,7 +236,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"h6",
         "image":  "images/h7.png"
     },
     {
@@ -248,7 +248,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"1",
+        "code":"h7",
         "image":  "images/h2.png"
     },
     {
@@ -260,7 +260,7 @@
             "four": 580
                 },
         "mrp":500,
-        "code":"1",
+        "code":"f1",
         "image":  "images/f1.png"
     },
     {
@@ -272,7 +272,7 @@
             "four": 580
                 },
         "mrp":500,
-        "code":"1",
+        "code":"f2",
         "image":  "images/f2.png"
     },
     {
@@ -284,7 +284,7 @@
             "four": 580
                 },
         "mrp":500,
-        "code":"1",
+        "code":"f3",
         "image":  "images/f3.jpeg"
     },
     {
@@ -296,7 +296,7 @@
             "four": 580
                 },
         "mrp":500,
-        "code":"1",
+        "code":"f4",
         "image":  "images/f1.png"
     },
     {
@@ -308,7 +308,7 @@
             "four": 580
                 },
         "mrp":500,
-        "code":"1",
+        "code":"f5",
         "image":  "images/f2.png"
     },
     {
@@ -320,7 +320,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "code":"1",
+        "code":"d1",
         "image":  "images/d1.png"
     },
     {
@@ -332,7 +332,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "code":"1",
+        "code":"d2",
         "image":  "images/d2.png"
     },
     {
@@ -344,7 +344,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "code":"1",
+        "code":"d3",
         "image":  "images/d3.png"
     },
     {
@@ -356,7 +356,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "code":"1",
+        "code":"d4",
         "image":  "images/d4.png"
     },
     {
@@ -368,7 +368,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "code":"1",
+        "code":"d5",
         "image":  "images/d5.png"
     },
     {
@@ -376,7 +376,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m1",
         "image":  "images/m1.png"
     },
     {
@@ -384,7 +384,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m2",
         "image":  "images/m2.png"
     },
     {
@@ -392,7 +392,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m3",
         "image":  "images/m3.png"
     },
     {
@@ -400,7 +400,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m4",
         "image":  "images/m4.png"
     },
     {
@@ -408,7 +408,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m5",
         "image":  "images/m5.png"
     },
     {
@@ -416,7 +416,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m6",
         "image":  "images/m6.png"
     },
     {
@@ -424,7 +424,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m7",
         "image":  "images/m7.png"
     },
     {
@@ -432,7 +432,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m8",
         "image":  "images/m8.png"
     },
     {
@@ -440,7 +440,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m9",
         "image":  "images/m9.png"
     },
     {
@@ -448,7 +448,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m10",
         "image":  "images/m100.png"
     },
     {
@@ -456,7 +456,7 @@
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "code":"1",
+        "code":"m11",
         "image":  "images/m11.png"
     }
 ]

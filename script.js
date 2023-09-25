@@ -499,14 +499,14 @@ function hideDropdown(itemId) {
   dropdown.style.display = "none";
 }
 
-function addToCartWithSize(id, name, image) {
+function addToCartWithSize(id, name, image, code) {
   const dropdown = document.getElementById(`dropdown-options-${id}`);
   const selectedOption = dropdown.options[dropdown.selectedIndex].text;
   const size = selectedOption.split("-")[0].trim();
   const price = parseInt(selectedOption.split("₹")[1]);
 
   // You can add the selected size and price to the cartData object
-  addToCart(id, `${name} (${size})`, price, image);
+  addToCart(id, `${name} (${size}) (${code})`, price, image);
   // hideDropdown(id);
 }
 
@@ -554,7 +554,7 @@ if ( i < 10) {
 <div class="box" >
 <span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
 <img src="${item.image}" alt="img">
-<h3 class="product-name" id="1"><b>${item.name}</b></h3>
+<h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
 <div class="stars"></div>
 <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
@@ -563,7 +563,7 @@ if ( i < 10) {
     <option value="4 Pound ">4 Pound - ₹${item.price.four}</option>
   </select><br><br>
 </div>
-<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
+<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
 
 <div class="Go-to-Cart" style="display: none;">
 <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
@@ -578,7 +578,7 @@ if (i >= 10 && i < 14) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1"><b>${item.name}</b></h3>
+  <h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
   
   <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
@@ -588,7 +588,7 @@ if (i >= 10 && i < 14) {
   <option value="5 Pound ">5 Pound - ₹${item.price.five}</option>
   </select><br><br>
 </div>
-<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
+<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
   <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
@@ -603,7 +603,7 @@ if (i >= 14 && i < 21 ) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1"><b>${item.name}</b></h3>
+  <h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
    <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
@@ -612,7 +612,7 @@ if (i >= 14 && i < 21 ) {
   <option value="5 Pound ">5 Pound  - ₹${item.price.five}</option>
   </select><br><br>
 </div>
-<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
+<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
  <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
@@ -627,8 +627,8 @@ if (i >= 21 && i < 26) {
     <div class="box" >
     <span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
     <img src="${item.image}" alt="img">
-    <h3 class="product-name" id="1"><b>${item.name}</b></h3>
-     <div class="stars"></div>
+    <h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
+    <div class="stars"></div>
      <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
      <select class="size" id="dropdown-options-${item.id}">
      <option value="2 Pound ">2 Pound  - ₹${item.price.two}</option>
@@ -636,8 +636,8 @@ if (i >= 21 && i < 26) {
      <option value="4 Pound ">4 Pound  - ₹${item.price.four}</option>
      </select><br><br>
    </div>
-   <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
-      <div class="Go-to-Cart" style="display: none;">
+   <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
+   <div class="Go-to-Cart" style="display: none;">
     <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
     </div>
     
@@ -651,8 +651,8 @@ if (i >= 26 && i < 31) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.five) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1"><b>${item.name}</b></h3>
-   <div class="stars"></div>
+  <h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
+  <div class="stars"></div>
    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
    <select class="size" id="dropdown-options-${item.id}">
    <option value="5 Pound ">5 Pound  - ₹${item.price.five}</option>
@@ -660,8 +660,8 @@ if (i >= 26 && i < 31) {
    <option value="7 Pound ">7 Pound  - ₹${item.price.seven}</option>
    </select><br><br>
  </div>
- <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
-   <div class="Go-to-Cart" style="display: none;">
+ <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
+ <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
   
@@ -691,145 +691,6 @@ if (i >= 31 && i < 42) {
   </div>
   `;
 }
-if (i >= 44 && i < 50) {
-Chaap += `
-<div class="box" >
-<span class="price product-price"> ₹ ${item.price}</span>
-<img src="${item.image}" alt="${item.name}">
-<h3 class="product-name" id="1">${item.name}</h3>
-<div class="stars">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-<h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
-<div class="Go-to-Cart" style="display: none;">
-<h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-</div>
-
-</div>
-</div>
-</div>
-`;
-}
-if (i >= 50 && i < 61) {
-  Chinese += `
-<div class="box" >
-<span class="price product-price"> ₹ ${item.price}</span>
-<img src="${item.image}" alt="img">
-<h3 class="product-name" id="1">${item.name}</h3>
-<div class="stars">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-<h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
-<div class="Go-to-Cart" style="display: none;">
-<h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-</div>
-
-</div>
-</div>
-</div>
-`;
-}
-if (i >= 61 && i < 64) {
-Momos += `
-<div class="box" >
-<span class="price product-price"> ₹ ${item.price}</span>
-<img src="${item.image}" alt="img">
-<h3 class="product-name" id="1">${item.name}</h3>
-<div class="stars">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-<h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
-<div class="Go-to-Cart" style="display: none;">
-<h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-</div>
-
-</div>
-</div>
-</div>
-`;
-}
-if (i >= 64 && i < 68) {
-  Snacks += `
-    <div class="box" >
-   <span class="price product-price"> ₹ ${item.price}</span>
-   <img src="${item.image}" alt="img">
-   <h3 class="product-name" id="1">${item.name}</h3>
-   <div class="stars">
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-  </div>
-  <h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
-  <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-  `;
-}
-if (i >= 70 && i < 87) {
-  Vegetables += `
-  <div class="box" >
-  <span class="price product-price"> ₹ ${item.price.Half}</span>
-  <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1">${item.name}</h3>
-  <div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  </div>
-  <h2 class="btnn">ADD</h2>
-    <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  <div class="new-buttons" style="display: none;">
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Half]', ${item.price.Half}, '${item.image}')">Half ${item.price.Half}/-</button>
-  <button class="popup-option add-to-cart" onclick="addToCart('${item.id}', '${item.name} [Full]', ${item.price.Full}, '${item.image}')">Full ${item.price.Full}/-</button>
-</div>
-  </div>
-  `;
-}
-if (i >= 87 && i < 99) {
-  Roti += `
-    <div class="box" >
-   <span class="price product-price"> ₹ ${item.price}</span>
-   <img src="${item.image}" alt="img">
-   <h3 class="product-name" id="1">${item.name}</h3>
-   <div class="stars">
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-   <i class="fas fa-star"></i>
-  </div>
-  <h2 class="btn add-to-cart "  onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}') ">ADD</h2>
-  <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-  `;
-}
 }
 document.querySelector(".bdaycake").innerHTML = bdaycake;
 document.querySelector(".anicake").innerHTML = anicake;
@@ -837,15 +698,6 @@ document.querySelector(".heart").innerHTML = heart;
 document.querySelector(".fruit").innerHTML = fruit;
 document.querySelector(".doll").innerHTML = doll;
 document.querySelector(".multi").innerHTML = multi;
-// document.querySelector(".Chinese").innerHTML = Chinese;
-// document.querySelector(".Shakes").innerHTML = Shakes;
-// document.querySelector(".Garlic").innerHTML = Garlic;
-// document.querySelector(".Wrap").innerHTML = Wrap;
-// document.querySelector(".Chaap").innerHTML = Chaap;
-// document.querySelector(".Momos").innerHTML = Momos;
-// document.querySelector(".Snacks").innerHTML = Snacks;
-// document.querySelector(".Vegetables").innerHTML = Vegetables;
-// document.querySelector(".Roti").innerHTML = Roti;
 }
 };
 
