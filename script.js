@@ -506,7 +506,7 @@ function addToCartWithSize(id, name, image, code) {
   const price = parseInt(selectedOption.split("₹")[1]);
 
   // You can add the selected size and price to the cartData object
-  addToCart(id, `${name} (${size}) (${code})`, price, image);
+  addToCart(id, `${name} [${size}] item code : ${code}`, price, image);
   // hideDropdown(id);
 }
 

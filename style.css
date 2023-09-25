@@ -1149,11 +1149,11 @@ body.dark-mode .dropdownn{
 }
 .scroll-down {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 70px;
+  right: 10px;
   z-index: 1000;
   background-color: transparent;
-  border-radius: 50%;
+  border-radius: 70%;
   padding: 8px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
