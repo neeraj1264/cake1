@@ -510,6 +510,12 @@ header img {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
+.code{
+  font-size: 1rem;
+  /* margin-left: 2rem; */
+  position: absolute;
+  right: 0;
+}
 .review {
   padding-top: 10rem;
 }
