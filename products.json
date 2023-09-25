@@ -8,7 +8,7 @@
             "four": 450
                 }, 
         "mrp":300,
-        "image": "images/b2.jpeg"
+        "image": "images/b2.png"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
             "four": 450
                 }, 
         "mrp":300,
-        "image": "images/b3.jpeg"
+        "image": "images/b3.png"
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@
             "four": 450
                 },
         "mrp":300,
-        "image": "images/b4.jpeg"
+        "image": "images/b4.png"
         },
     {
         "id": 4,
@@ -41,7 +41,7 @@
             "four": 450
                 },
         "mrp":300,
-        "image": "images/b5.jpeg"
+        "image": "images/b5.png"
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@
             "four": 450
                 },
         "mrp":300,
-        "image": "images/b6.jpeg"
+        "image": "images/b6.png"
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@
             "four": 450
                 },
         "mrp":300,
-        "image": "images/b8.jpeg"
+        "image": "images/b8.png"
     },
     {
         "id": 7,
@@ -74,7 +74,7 @@
             "four": 450
                 },
         "mrp":300,
-        "image": "images/b13.jpeg"
+        "image": "images/b13.png"
     },
     {
         "id": 8,
@@ -85,7 +85,7 @@
             "four": 450
                 },
         "mrp":300,
-        "image": "images/b14.jpeg"
+        "image": "images/b14.png"
     },
     {
         "id": 9,
@@ -96,7 +96,7 @@
             "four": 450
                 },
         "mrp":300,
-        "image": "images/b22.jpeg"
+        "image": "images/b22.png"
     },
     {
         "id": 10,
@@ -107,7 +107,7 @@
             "four": 500
                 },
         "mrp":400,
-        "image": "images/b1.jpeg"
+        "image": "images/b1.png"
     },
     {
         "id": 11,
@@ -118,7 +118,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/a2.jpeg"
+        "image": "images/a2.png"
         },
     {
         "id": 12,
@@ -129,7 +129,7 @@
             "five": 620
                 },
         "mrp":400,
-        "image": "images/a3.jpeg"
+        "image": "images/a3.png"
     },
     {
         "id": 13,
@@ -140,7 +140,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/a4.jpeg"
+        "image": "images/a4.png"
     },
     {
         "id": 14,
@@ -151,7 +151,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/h5.jpeg"
+        "image": "images/a5.png"
     },
     {
         "id": 15,
@@ -162,7 +162,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/h2.jpeg"
+        "image": "images/h8.png"
     },
     {
         "id": 16,
@@ -173,7 +173,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/h3.jpeg"
+        "image": "images/h3.png"
     },
     {
         "id": 17,
@@ -184,7 +184,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/h4.jpeg"
+        "image": "images/a1.png"
     },
     {
         "id": 18,
@@ -195,7 +195,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/h5.jpeg"
+        "image": "images/a5.png"
     },
     {
         "id": 19,
@@ -206,7 +206,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/h6.jpeg"
+        "image": "images/a2.png"
     },
     {
         "id": 20,
@@ -217,7 +217,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/h7.jpeg"
+        "image": "images/h7.png"
     },
     {
         "id": 21,
@@ -228,7 +228,7 @@
             "five": 550
                 },
         "mrp":400,
-        "image": "images/h8.jpeg"
+        "image": "images/h2.png"
     },
     {
         "id": 22,
@@ -239,7 +239,7 @@
             "four": 580
                 },
         "mrp":500,
-        "image": "images/f1.jpeg"
+        "image": "images/f1.png"
     },
     {
         "id": 23,
@@ -250,7 +250,7 @@
             "four": 580
                 },
         "mrp":500,
-        "image": "images/f2.jpeg"
+        "image": "images/f2.png"
     },
     {
         "id": 24,
@@ -272,7 +272,7 @@
             "four": 580
                 },
         "mrp":500,
-        "image": "images/f1.jpeg"
+        "image": "images/f1.png"
     },
     {
         "id": 26,
@@ -283,7 +283,7 @@
             "four": 580
                 },
         "mrp":500,
-        "image": "images/f2.jpeg"
+        "image": "images/f2.png"
     },
     {
         "id": 27,
@@ -294,7 +294,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "image": "images/doll.jpg"
+        "image": "images/d1.png"
     },
     {
         "id": 28,
@@ -305,7 +305,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "image": "images/doll2.jpg"
+        "image": "images/d2.png"
     },
     {
         "id": 29,
@@ -316,7 +316,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "image": "images/doll3.jpg"
+        "image": "images/d3.png"
     },
     {
         "id": 30,
@@ -327,7 +327,7 @@
             "seven": 800
                 },
         "mrp":750,
-        "image": "images/doll4.jpg"
+        "image": "images/d4.png"
     },
     {
         "id": 31,
@@ -338,77 +338,77 @@
             "seven": 800
                 },
         "mrp":750,
-        "image": "images/doll5.jpg"
+        "image": "images/d5.png"
     },
     {
         "id": 32,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m1.jpeg"
+        "image": "images/m1.png"
     },
     {
         "id": 33,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m2.jpeg"
+        "image": "images/m2.png"
     },
     {
         "id": 34,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m3.jpeg"
+        "image": "images/m3.png"
     },
     {
         "id": 35,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m4.jpeg"
+        "image": "images/m4.png"
     },
     {
         "id": 36,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m5.jpeg"
+        "image": "images/m5.png"
     },
     {
         "id": 37,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m6.jpeg"
+        "image": "images/m6.png"
     },
     {
         "id": 38,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m7.jpeg"
+        "image": "images/m7.png"
     },
     {
         "id": 39,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m8.jpeg"
+        "image": "images/m8.png"
     },
     {
         "id": 40,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m9.jpeg"
+        "image": "images/m9.png"
     },
     {
         "id": 41,
         "name": "Multi Tier Cake",
         "price": 1100,
         "mrp":1500,
-        "image": "images/m10.jpeg"
+        "image": "images/m10.png"
     },
     {
         "id": 42,

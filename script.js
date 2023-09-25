@@ -558,9 +558,9 @@ if ( i < 10) {
 <div class="stars"></div>
 <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
-    <option value="[2 Pound ]">[2 Pound ] - ₹${item.price.two}</option>
-    <option value="[3 Pound ]">[3 Pound ] - ₹${item.price.three}</option>
-    <option value="[4 Pound ]">[4 Pound ] - ₹${item.price.four}</option>
+    <option value="2 Pound ">2 Pound - ₹${item.price.two}</option>
+    <option value="3 Pound ">3 Pound - ₹${item.price.three}</option>
+    <option value="4 Pound ">4 Pound - ₹${item.price.four}</option>
   </select><br><br>
 </div>
 <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -583,9 +583,9 @@ if (i >= 10 && i < 14) {
   <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
-  <option value="[3 Pound ]">[3 Pound ] - ₹${item.price.three}</option>
-  <option value="[4 Pound ]">[4 Pound ] - ₹${item.price.four}</option>
-  <option value="[5 Pound ]">[5 Pound ] - ₹${item.price.five}</option>
+  <option value="3 Pound ">3 Pound - ₹${item.price.three}</option>
+  <option value="4 Pound ">4 Pound - ₹${item.price.four}</option>
+  <option value="5 Pound ">5 Pound - ₹${item.price.five}</option>
   </select><br><br>
 </div>
 <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -607,9 +607,9 @@ if (i >= 14 && i < 21 ) {
    <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
-  <option value="[3 Pound ]">[3 Pound ] - ₹${item.price.three}</option>
-  <option value="[4 Pound ]">[4 Pound ] - ₹${item.price.four}</option>
-  <option value="[5 Pound ]">[5 Pound ] - ₹${item.price.five}</option>
+  <option value="3 Pound ">3 Pound  - ₹${item.price.three}</option>
+  <option value="4 Pound ">4 Pound  - ₹${item.price.four}</option>
+  <option value="5 Pound ">5 Pound  - ₹${item.price.five}</option>
   </select><br><br>
 </div>
 <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -631,9 +631,9 @@ if (i >= 21 && i < 26) {
      <div class="stars"></div>
      <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
      <select class="size" id="dropdown-options-${item.id}">
-     <option value="[2 Pound ]">[2 Pound ] - ₹${item.price.two}</option>
-     <option value="[3 Pound ]">[3 Pound ] - ₹${item.price.three}</option>
-     <option value="[4 Pound ]">[4 Pound ] - ₹${item.price.four}</option>
+     <option value="2 Pound ">2 Pound  - ₹${item.price.two}</option>
+     <option value="3 Pound ">3 Pound  - ₹${item.price.three}</option>
+     <option value="4 Pound ">4 Pound  - ₹${item.price.four}</option>
      </select><br><br>
    </div>
    <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -655,9 +655,9 @@ if (i >= 26 && i < 31) {
    <div class="stars"></div>
    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
    <select class="size" id="dropdown-options-${item.id}">
-   <option value="[5 Pound ]">[5 Pound ] - ₹${item.price.five}</option>
-   <option value="[6 Pound ]">[6 Pound ] - ₹${item.price.six}</option>
-   <option value="[7 Pound ]">[7 Pound ] - ₹${item.price.seven}</option>
+   <option value="5 Pound ">5 Pound  - ₹${item.price.five}</option>
+   <option value="6 Pound ">6 Pound  - ₹${item.price.six}</option>
+   <option value="7 Pound ">7 Pound  - ₹${item.price.seven}</option>
    </select><br><br>
  </div>
  <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
@@ -681,7 +681,7 @@ if (i >= 31 && i < 42) {
    <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
    </span>
   <div class="stars"> </div>
- <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}')">Add</button>
+ <button class="btn btn-ok add-to-cart" onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}')">Add</button>
     <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
