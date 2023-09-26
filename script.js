@@ -160,7 +160,7 @@ function submitOrder(cartData) {
   for (const itemId in cartData) {
     if (cartData.hasOwnProperty(itemId)) {
       const item = cartData[itemId];
-      message += `${item.quantity}x ${item.name} - ₹ ${item.price}\n`;
+      message += `${item.quantity}x ${item.name} ${item.code} - ₹ ${item.price}\n`;
     }
   }
 
@@ -268,15 +268,16 @@ function showCartModal() {
       const imageCell = document.createElement("td");
       imageCell.classList.add("center-align");
       const itemImage = document.createElement("img");
-      itemImage.src = item.image;
+      itemImage.src = item.image; // Use item.image to set the image source
       itemImage.alt = item.name;
       imageCell.appendChild(itemImage);
       cartRow.appendChild(imageCell);
 
       const nameCell = document.createElement("td");
       nameCell.classList.add("center-align");
-      nameCell.textContent = item.name;
+      nameCell.innerHTML = `${item.name}`; // Use item.code for the code
       cartRow.appendChild(nameCell);
+
 
       const quantityCell = document.createElement("td");
       quantityCell.classList.add("center-align");
@@ -474,7 +475,7 @@ function closeCartModal() {
   location.reload();
 }
 
-function addToCart(id, name, price, image, quantity) {
+function addToCart(id, name, price, image, code,  quantity) {
   if (cartData.hasOwnProperty(id)) {
     cartData[id].quantity ++;
   } else {
@@ -482,6 +483,7 @@ function addToCart(id, name, price, image, quantity) {
       name: name,
       price: price,
       image: image,
+      code: code,
       quantity: +1,
     };
   }
@@ -506,9 +508,10 @@ function addToCartWithSize(id, name, image, code) {
   const price = parseInt(selectedOption.split("₹")[1]);
 
   // You can add the selected size and price to the cartData object
-  addToCart(id, `${name} [${size}] item code : ${code}`, price, image);
+  addToCart(id, `${name} [${size}]`, price, image, code);
   // hideDropdown(id);
 }
+
 
 
 function updateCartCount() {
@@ -538,15 +541,6 @@ let heart = "";
 let fruit = "";
 let doll = "";
 let multi = "";
-let Chinese = "";
-let Shakes = "";
-let Garlic = "";
-let Wrap = "";
-let Vegetables = "";
-let Roti = "";
-let Snacks = "";
-let Chaap = "";
-let Momos = "";
 for (let i = 0; i < products.length; i++) {
 const item = products[i];
 if ( i < 10) {
@@ -554,7 +548,7 @@ if ( i < 10) {
 <div class="box" >
 <span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
 <img src="${item.image}" alt="img">
-<h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
+<h3 class="product-name"<b>${item.name}</b></h3>
 <div class="stars"></div>
 <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
@@ -578,7 +572,7 @@ if (i >= 10 && i < 14) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
+  <h3 class="product-name"<b>${item.name}</b>  </h3>
   
   <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
@@ -603,7 +597,7 @@ if (i >= 14 && i < 21 ) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
+  <h3 class="product-name"<b>${item.name}</b>  </h3>
    <div class="stars"></div>
   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
   <select class="size" id="dropdown-options-${item.id}">
@@ -627,7 +621,7 @@ if (i >= 21 && i < 26) {
     <div class="box" >
     <span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
     <img src="${item.image}" alt="img">
-    <h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
+    <h3 class="product-name"<b>${item.name}</b>  </h3>
     <div class="stars"></div>
      <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
      <select class="size" id="dropdown-options-${item.id}">
@@ -651,7 +645,7 @@ if (i >= 26 && i < 31) {
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.five) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name"<b>${item.name}</b><span class="code">${item.code}</span></h3>
+  <h3 class="product-name"<b>${item.name}</b>  </h3>
   <div class="stars"></div>
    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
    <select class="size" id="dropdown-options-${item.id}">
@@ -673,23 +667,25 @@ if (i >= 26 && i < 31) {
 if (i >= 31 && i < 42) {
   multi += `
   <div class="box" >
-  <span class="dis product-price"><b>${Math.round((item.mrp - item.price) / item.mrp * 100)}</b>% off</span>
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.ten) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
-  <h3 class="product-name" id="1"><b>${item.name}</b></h3>
-  <span class="pricee product-price"> <b>₹ ${item.price}</b> 
-  <del class="mrp">₹ ${item.mrp}</del>
-   <span class="rev"> 4.7 <i class="fas fa-star"></i></span>
-   </span>
-  <div class="stars"> </div>
- <button class="btn btn-ok add-to-cart" onclick="addToCart('${item.id}', '${item.name}', ${item.price}, '${item.image}')">Add</button>
-    <div class="Go-to-Cart" style="display: none;">
+  <h3 class="product-name"<b>${item.name}</b>  </h3>
+  <div class="stars"></div>
+   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
+   <select class="size" id="dropdown-options-${item.id}">
+   <option value="10 Pound ">10 Pound  - ₹${item.price.ten}</option>
+   <option value="12 Pound ">12 Pound  - ₹${item.price.twelve}</option>
+   </select><br><br>
+ </div>
+ <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
+ <div class="Go-to-Cart" style="display: none;">
   <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
   </div>
   
   </div>
   </div>
   </div>
-  `;
+  `; 
 }
 }
 document.querySelector(".bdaycake").innerHTML = bdaycake;

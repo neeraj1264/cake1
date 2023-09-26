@@ -374,7 +374,10 @@
     {
         "id": 32,
         "name": "Multi Tier Cake",
-        "price": 1100,
+        "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m1",
         "image":  "images/m1.png"
@@ -382,7 +385,10 @@
     {
         "id": 33,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m2",
         "image":  "images/m2.png"
@@ -390,7 +396,10 @@
     {
         "id": 34,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m3",
         "image":  "images/m3.png"
@@ -398,7 +407,10 @@
     {
         "id": 35,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m4",
         "image":  "images/m4.png"
@@ -406,7 +418,10 @@
     {
         "id": 36,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m5",
         "image":  "images/m5.png"
@@ -414,7 +429,10 @@
     {
         "id": 37,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m6",
         "image":  "images/m6.png"
@@ -422,7 +440,10 @@
     {
         "id": 38,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m7",
         "image":  "images/m7.png"
@@ -430,7 +451,10 @@
     {
         "id": 39,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m8",
         "image":  "images/m8.png"
@@ -438,7 +462,10 @@
     {
         "id": 40,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m9",
         "image":  "images/m9.png"
@@ -446,7 +473,10 @@
     {
         "id": 41,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m10",
         "image":  "images/m100.png"
@@ -454,7 +484,10 @@
     {
         "id": 42,
         "name": "Multi Tier Cake",
-        "price": 1100,
+          "price": {
+            "ten": 1100,
+            "twelve": 1400
+                },
         "mrp":1500,
         "code":"m11",
         "image":  "images/m11.png"
