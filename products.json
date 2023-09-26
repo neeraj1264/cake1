@@ -75,11 +75,11 @@
         "id": 7,
         "name": "Vanilla Cake",
         "price": {
-            "two": 250,
-            "three": 350,
-            "four": 450
+            "two": 280,
+            "three": 380,
+            "four": 480
                 },
-        "mrp":300,
+        "mrp":350,
         "code":"b7",
         "image":  "images/b13.png"
     },
@@ -87,11 +87,11 @@
         "id": 8,
         "name": "Mix Cake",
         "price": {
-            "two": 250,
-            "three": 350,
-            "four": 450
+            "two": 270,
+            "three": 370,
+            "four": 470
                 },
-        "mrp":300,
+        "mrp":350,
         "code":"b8",
         "image":  "images/b14.png"
     },
@@ -193,14 +193,17 @@
     },
     {
         "id": 17,
-        "name": "Heart Cake",
+        "name": "Heart Cake two tier",
         "price": {
-            "three": 350,
-            "four": 450,
-            "five": 550
+            "five": 980,
+            "six": 1260
                 },
-        "mrp":400,
-        "code":"h3",
+        "size": {
+            "one": "8 pound",
+            "two": "10 pound"
+        },
+        "mrp":1500,
+        "code":"m1",
         "image":  "images/a1.png"
     },
     {
@@ -212,7 +215,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"h4",
+        "code":"h3",
         "image":  "images/a5.png"
     },
     {
@@ -224,7 +227,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"h5",
+        "code":"h4",
         "image":  "images/a2.png"
     },
     {
@@ -236,7 +239,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"h6",
+        "code":"h5",
         "image":  "images/h7.png"
     },
     {
@@ -248,7 +251,7 @@
             "five": 550
                 },
         "mrp":400,
-        "code":"h7",
+        "code":"h6",
         "image":  "images/h2.png"
     },
     {
@@ -256,8 +259,8 @@
         "name": "Fruit Cake",
        "price": {
             "two": 380,
-            "three": 480,
-            "four": 580
+            "three": 490,
+            "four": 600
                 },
         "mrp":500,
         "code":"f1",
@@ -268,8 +271,8 @@
         "name": "Fruit Cake",
        "price": {
             "two": 380,
-            "three": 480,
-            "four": 580
+            "three": 490,
+            "four": 600
                 },
         "mrp":500,
         "code":"f2",
@@ -280,8 +283,8 @@
         "name": "Fruit Cake",
        "price": {
             "two": 380,
-            "three": 480,
-            "four": 580
+            "three": 490,
+            "four": 600
                 },
         "mrp":500,
         "code":"f3",
@@ -292,8 +295,8 @@
         "name": "Fruit Cake",
        "price": {
             "two": 380,
-            "three": 480,
-            "four": 580
+            "three": 490,
+            "four": 600
                 },
         "mrp":500,
         "code":"f4",
@@ -304,8 +307,8 @@
         "name": "Fruit Cake",
        "price": {
             "two": 380,
-            "three": 480,
-            "four": 580
+            "three": 490,
+            "four": 600
                 },
         "mrp":500,
         "code":"f5",
@@ -315,181 +318,240 @@
         "id": 27,
         "name": "Doll Cake",
         "price": {
-            "five": 600,
-            "six": 700,
-            "seven": 800
+            "five": 400,
+            "six": 620
                 },
         "mrp":750,
+        "size": {
+            "one": "3 pound",
+            "two": "5 pound"
+        },
         "code":"d1",
-        "image":  "images/d1.png"
+        "image":  "images/d2.png"
     },
     {
         "id": 28,
         "name": "Doll Cake",
         "price": {
-            "five": 600,
-            "six": 700,
-            "seven": 800
+            "five": 400,
+            "six": 620
                 },
         "mrp":750,
+        "size": {
+            "one": "3 pound",
+            "two": "5 pound"
+        },
         "code":"d2",
-        "image":  "images/d2.png"
+        "image":  "images/d4.png"
     },
     {
         "id": 29,
         "name": "Doll Cake",
         "price": {
-            "five": 600,
-            "six": 700,
-            "seven": 800
+            "five": 400,
+            "six": 620
                 },
         "mrp":750,
+        "size": {
+            "one": "3 pound",
+            "two": "5 pound"
+        },
         "code":"d3",
-        "image":  "images/d3.png"
+        "image":  "images/d5.png"
     },
     {
         "id": 30,
         "name": "Doll Cake",
         "price": {
-            "five": 600,
-            "six": 700,
-            "seven": 800
+            "five": 750,
+            "six": 980
                 },
-        "mrp":750,
+        "mrp":1000,
+        "size": {
+            "one": "6 pound",
+            "two": "8 pound"
+        },
         "code":"d4",
-        "image":  "images/d4.png"
+        "image":  "images/d1.png"
     },
     {
         "id": 31,
         "name": "Doll Cake",
         "price": {
-            "five": 600,
-            "six": 700,
-            "seven": 800
+            "five": 980,
+            "six": 1260
                 },
-        "mrp":750,
+        "mrp":1300,
+        "size": {
+            "one": "8 pound",
+            "two": "10 pound"
+        },
         "code":"d5",
-        "image":  "images/d5.png"
+        "image":  "images/d3.png"
     },
     {
         "id": 32,
         "name": "Multi Tier Cake",
         "price": {
-            "ten": 1100,
-            "twelve": 1400
+            "five": 1260,
+            "six": 1500
                 },
-        "mrp":1500,
-        "code":"m1",
+        "size": {
+            "one": "10 pound",
+            "two": "12 pound"
+        },
+        "mrp":1600,
+        "code":"m2",
         "image":  "images/m1.png"
     },
     {
         "id": 33,
         "name": "Multi Tier Cake",
-          "price": {
-            "ten": 1100,
-            "twelve": 1400
+        "price": {
+            "five": 1260,
+            "six": 1500
                 },
-        "mrp":1500,
-        "code":"m2",
+        "size": {
+            "one": "10 pound",
+            "two": "12 pound"
+        },
+        "mrp":1600,
+        "code":"m3",
         "image":  "images/m2.png"
     },
     {
         "id": 34,
         "name": "Multi Tier Cake",
-          "price": {
-            "ten": 1100,
-            "twelve": 1400
+        "price": {
+            "five": 1260,
+            "six": 1500
                 },
-        "mrp":1500,
-        "code":"m3",
+        "size": {
+            "one": "10 pound",
+            "two": "12 pound"
+        },
+        "mrp":1600,
+        "code":"m4",
         "image":  "images/m3.png"
     },
     {
         "id": 35,
         "name": "Multi Tier Cake",
           "price": {
-            "ten": 1100,
-            "twelve": 1400
+            "five": 980,
+            "six": 1260
                 },
+        "size": {
+            "one": "8 pound",
+            "two": "10 pound"
+        },
         "mrp":1500,
-        "code":"m4",
+        "code":"m5",
         "image":  "images/m4.png"
     },
     {
         "id": 36,
         "name": "Multi Tier Cake",
           "price": {
-            "ten": 1100,
-            "twelve": 1400
+            "five": 980,
+            "six": 1260
                 },
+        "size": {
+            "one": "8 pound",
+            "two": "10 pound"
+        },
         "mrp":1500,
-        "code":"m5",
+        "code":"m6",
         "image":  "images/m5.png"
     },
     {
         "id": 37,
         "name": "Multi Tier Cake",
-          "price": {
-            "ten": 1100,
-            "twelve": 1400
+        "price": {
+            "five": 1260,
+            "six": 1500
                 },
-        "mrp":1500,
-        "code":"m6",
+        "size": {
+            "one": "10 pound",
+            "two": "12 pound"
+        },
+        "mrp":1600,
+        "code":"m7",
         "image":  "images/m6.png"
     },
     {
         "id": 38,
         "name": "Multi Tier Cake",
           "price": {
-            "ten": 1100,
-            "twelve": 1400
+            "five": 980,
+            "six": 1260
                 },
+        "size": {
+            "one": "8 pound",
+            "two": "10 pound"
+        },
         "mrp":1500,
-        "code":"m7",
+        "code":"m8",
         "image":  "images/m7.png"
     },
     {
         "id": 39,
         "name": "Multi Tier Cake",
           "price": {
-            "ten": 1100,
-            "twelve": 1400
+            "five": 980,
+            "six": 1260
                 },
+        "size": {
+            "one": "8 pound",
+            "two": "10 pound"
+        },
         "mrp":1500,
-        "code":"m8",
+        "code":"m9",
         "image":  "images/m8.png"
     },
     {
         "id": 40,
         "name": "Multi Tier Cake",
           "price": {
-            "ten": 1100,
-            "twelve": 1400
+            "five": 980,
+            "six": 1260
                 },
+        "size": {
+            "one": "8 pound",
+            "two": "10 pound"
+        },
         "mrp":1500,
-        "code":"m9",
-        "image":  "images/m9.png"
+        "code":"m10",
+        "image": "images/m9.png"
     },
     {
         "id": 41,
         "name": "Multi Tier Cake",
           "price": {
-            "ten": 1100,
-            "twelve": 1400
+            "five": 1050,
+            "six": 1350
                 },
+        "size": {
+            "one": "8 pound",
+            "two": "10 pound"
+        },
         "mrp":1500,
-        "code":"m10",
+        "code":"m11",
         "image":  "images/m100.png"
     },
     {
         "id": 42,
         "name": "Multi Tier Cake",
-          "price": {
-            "ten": 1100,
-            "twelve": 1400
+        "price": {
+            "five": 1260,
+            "six": 1500
                 },
-        "mrp":1500,
-        "code":"m11",
+        "size": {
+            "one": "10 pound",
+            "two": "12 pound"
+        },
+        "mrp":1600,
+        "code":"m12",
         "image":  "images/m11.png"
     }
 ]

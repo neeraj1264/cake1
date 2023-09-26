@@ -592,7 +592,7 @@ if (i >= 10 && i < 14) {
   </div>
   `;
 }
-if (i >= 14 && i < 21 ) {
+if (i == 14 || i == 15 || i >= 17 && i < 21 ) {
   heart += `
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
@@ -649,9 +649,8 @@ if (i >= 26 && i < 31) {
   <div class="stars"></div>
    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
    <select class="size" id="dropdown-options-${item.id}">
-   <option value="5 Pound ">5 Pound  - ₹${item.price.five}</option>
-   <option value="6 Pound ">6 Pound  - ₹${item.price.six}</option>
-   <option value="7 Pound ">7 Pound  - ₹${item.price.seven}</option>
+   <option value="5 Pound ">${item.size.one}  - ₹${item.price.five}</option>
+   <option value="6 Pound ">${item.size.two}  - ₹${item.price.six}</option>
    </select><br><br>
  </div>
  <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
@@ -664,17 +663,17 @@ if (i >= 26 && i < 31) {
   </div>
   `; 
 }
-if (i >= 31 && i < 42) {
+if (i == 16 || i >= 31 && i < 42) {
   multi += `
   <div class="box" >
-  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.ten) / item.mrp * 100)}</b>% off</span>
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.five) / item.mrp * 100)}</b>% off</span>
   <img src="${item.image}" alt="img">
   <h3 class="product-name"<b>${item.name}</b>  </h3>
   <div class="stars"></div>
    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
    <select class="size" id="dropdown-options-${item.id}">
-   <option value="10 Pound ">10 Pound  - ₹${item.price.ten}</option>
-   <option value="12 Pound ">12 Pound  - ₹${item.price.twelve}</option>
+   <option value="10 Pound ">${item.size.one}  - ₹${item.price.five}</option>
+   <option value="12 Pound ">${item.size.two}  - ₹${item.price.six}</option>
    </select><br><br>
  </div>
  <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
