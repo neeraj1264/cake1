@@ -544,44 +544,35 @@ http.send();
 http.onload = function () {
   if (this.readyState == 4 && this.status == 200) {
 let products = JSON.parse(this.responseText);
-let bdaycake = "";
-let anicake = "";
-let heart = "";
-let fruit = "";
-let doll = "";
-let multi = "";
-let pic = "";
-for (let i = 0; i < products.length; i++) {
-const item = products[i];
-if ( i < 10) {
-  bdaycake += `
-<div class="box" >
-<span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
-<img src="${item.image}" alt="img">
-<h3 class="product-name"<b>${item.name}</b></h3>
-<div class="stars"></div>
-<div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
-  <select class="size" id="dropdown-options-${item.id}">
-    <option value="2 Pound ">2 Pound - ₹${item.price.two}</option>
-    <option value="3 Pound ">3 Pound - ₹${item.price.three}</option>
-    <option value="4 Pound ">4 Pound - ₹${item.price.four}</option>
-  </select><br><br>
-</div>
-<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
 
-<div class="Go-to-Cart" style="display: none;">
-<h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-</div>
-</div>
-</div>
-</div>
-`;
+function bday_fruitcake(item) {
+  return `
+  <div class="box">
+    <span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
+    <img src="${item.image}" alt="img" onclick="zoomImage(this)">
+    <h3 class="product-name"><b>${item.name}</b></h3>
+    <div class="stars"></div>
+    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
+      <select class="size" id="dropdown-options-${item.id}">
+        <option value="2 Pound">2 Pound - ₹${item.price.two}</option>
+        <option value="3 Pound">3 Pound - ₹${item.price.three}</option>
+        <option value="4 Pound">4 Pound - ₹${item.price.four}</option>
+      </select><br><br>
+    </div>
+    <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
+    <div class="Go-to-Cart" style="display: none;">
+      <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
+    </div>
+  </div>
+  </div>
+  </div>
+  `;
 }
-if (i >= 10 && i < 14) {
-  anicake += `
+function ani_heart(item) {
+  return `
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
-  <img src="${item.image}" alt="img">
+  <img src="${item.image}" alt="img" onclick="zoomImage(this)">
   <h3 class="product-name"<b>${item.name}</b>  </h3>
   
   <div class="stars"></div>
@@ -602,59 +593,11 @@ if (i >= 10 && i < 14) {
   </div>
   `;
 }
-if (i == 14 || i == 15 || i >= 17 && i < 21 ) {
-  heart += `
-  <div class="box" >
-  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.three) / item.mrp * 100)}</b>% off</span>
-  <img src="${item.image}" alt="img">
-  <h3 class="product-name"<b>${item.name}</b>  </h3>
-   <div class="stars"></div>
-  <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
-  <select class="size" id="dropdown-options-${item.id}">
-  <option value="3 Pound ">3 Pound  - ₹${item.price.three}</option>
-  <option value="4 Pound ">4 Pound  - ₹${item.price.four}</option>
-  <option value="5 Pound ">5 Pound  - ₹${item.price.five}</option>
-  </select><br><br>
-</div>
-<button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
- <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-  `;
-  }
-if (i >= 21 && i < 26) {
-    fruit += `
-    <div class="box" >
-    <span class="dis product-price"><b>${Math.round((item.mrp - item.price.two) / item.mrp * 100)}</b>% off</span>
-    <img src="${item.image}" alt="img">
-    <h3 class="product-name"<b>${item.name}</b>  </h3>
-    <div class="stars"></div>
-     <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
-     <select class="size" id="dropdown-options-${item.id}">
-     <option value="2 Pound ">2 Pound  - ₹${item.price.two}</option>
-     <option value="3 Pound ">3 Pound  - ₹${item.price.three}</option>
-     <option value="4 Pound ">4 Pound  - ₹${item.price.four}</option>
-     </select><br><br>
-   </div>
-   <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
-   <div class="Go-to-Cart" style="display: none;">
-    <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-    </div>
-    
-    </div>
-    </div>
-    </div>
-    `;
-}
-if (i >= 26 && i < 31) {
-  doll +=`
+function doll_multi_pic(item) {
+  return `
   <div class="box" >
   <span class="dis product-price"><b>${Math.round((item.mrp - item.price.five) / item.mrp * 100)}</b>% off</span>
-  <img src="${item.image}" alt="img">
+  <img src="${item.image}" alt="img" onclick="zoomImage(this)">
   <h3 class="product-name"<b>${item.name}</b>  </h3>
   <div class="stars"></div>
    <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
@@ -673,51 +616,43 @@ if (i >= 26 && i < 31) {
   </div>
   `; 
 }
+let bdaycake = "";
+let anicake = "";
+let heart = "";
+let fruit = "";
+let doll = "";
+let multi = "";
+let pic = "";
+for (let i = 0; i < products.length; i++) {
+const item = products[i];
+if ( i < 10 ) {
+  bdaycake += bday_fruitcake(item);
+
+bdaycake += `
+<div class="image-zoom-container" id="image-zoom-container">
+  <span class="close-zoom" onclick="closeZoomImage()">&times;</span>
+  <img class="zoomed-image" id="zoomed-image">
+</div>
+`;
+
+}
+if ( i >= 21 && i < 26 ) {
+  fruit += bday_fruitcake(item);
+}
+if (i >= 10 && i < 14) {
+  anicake += ani_heart(item);
+}
+if (i == 14 || i == 15 || i >= 17 && i < 21 ) {
+  heart += ani_heart(item);
+  }
+if (i >= 26 && i < 31) {
+  doll += doll_multi_pic(item);
+}
 if (i == 16 || i >= 31 && i < 42) {
-  multi += `
-  <div class="box" >
-  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.five) / item.mrp * 100)}</b>% off</span>
-  <img src="${item.image}" alt="img">
-  <h3 class="product-name"<b>${item.name}</b>  </h3>
-  <div class="stars"></div>
-   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
-   <select class="size" id="dropdown-options-${item.id}">
-   <option value="10 Pound ">${item.size.one}  - ₹${item.price.five}</option>
-   <option value="12 Pound ">${item.size.two}  - ₹${item.price.six}</option>
-   </select><br><br>
- </div>
- <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
- <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-  `; 
+  multi += doll_multi_pic(item);
 }
 if (i >= 42 && i < 51) {
-  pic += `
-  <div class="box" >
-  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.five) / item.mrp * 100)}</b>% off</span>
-  <img src="${item.image}" alt="img">
-  <h3 class="product-name"<b>${item.name}</b>  </h3>
-  <div class="stars"></div>
-   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
-   <select class="size" id="dropdown-options-${item.id}">
-   <option value="10 Pound ">${item.size.one}  - ₹${item.price.five}</option>
-   <option value="12 Pound ">${item.size.two}  - ₹${item.price.six}</option>
-   </select><br><br>
- </div>
- <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
- <div class="Go-to-Cart" style="display: none;">
-  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-  `; 
+  pic += doll_multi_pic(item);
 }
 }
 document.querySelector(".bdaycake").innerHTML = bdaycake;
@@ -769,3 +704,19 @@ document.addEventListener("DOMContentLoaded", function () {
     modeIcon.classList.add("fa-moon");
   }
 });
+
+// JavaScript function to zoom in on an image
+function zoomImage(image) {
+  const zoomedImage = document.getElementById('zoomed-image');
+  const imageZoomContainer = document.getElementById('image-zoom-container');
+  
+  zoomedImage.src = image.src;
+  imageZoomContainer.style.display = 'block';
+}
+
+// JavaScript function to close the zoomed-in image
+function closeZoomImage() {
+  const imageZoomContainer = document.getElementById('image-zoom-container');
+  imageZoomContainer.style.display = 'none';
+}
+
