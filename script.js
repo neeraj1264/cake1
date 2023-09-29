@@ -61,6 +61,10 @@ document.querySelector(".multi").addEventListener("click", (event) => {
   handleAddToCartClick(event);
 });
 
+document.querySelector(".pic").addEventListener("click", (event) => {
+  handleAddToCartClick(event);
+});
+
 // document.querySelector(".Chinese").addEventListener("click", (event) => {
 //   handleAddToCartClick(event);
 // });
@@ -546,6 +550,7 @@ let heart = "";
 let fruit = "";
 let doll = "";
 let multi = "";
+let pic = "";
 for (let i = 0; i < products.length; i++) {
 const item = products[i];
 if ( i < 10) {
@@ -691,6 +696,29 @@ if (i == 16 || i >= 31 && i < 42) {
   </div>
   `; 
 }
+if (i >= 42 && i < 51) {
+  pic += `
+  <div class="box" >
+  <span class="dis product-price"><b>${Math.round((item.mrp - item.price.five) / item.mrp * 100)}</b>% off</span>
+  <img src="${item.image}" alt="img">
+  <h3 class="product-name"<b>${item.name}</b>  </h3>
+  <div class="stars"></div>
+   <div class="dropdownn" id="dropdown-${item.id}" style="display: flex;">
+   <select class="size" id="dropdown-options-${item.id}">
+   <option value="10 Pound ">${item.size.one}  - ₹${item.price.five}</option>
+   <option value="12 Pound ">${item.size.two}  - ₹${item.price.six}</option>
+   </select><br><br>
+ </div>
+ <button class="btn btn-ok add-to-cart" onclick="addToCartWithSize('${item.id}', '${item.name}', '${item.image}', '${item.code}')">Add</button>
+ <div class="Go-to-Cart" style="display: none;">
+  <h2 class="go" onclick="showCartModal()">GO <i class="fas fa fa-shopping-cart"></i></h2>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  `; 
+}
 }
 document.querySelector(".bdaycake").innerHTML = bdaycake;
 document.querySelector(".anicake").innerHTML = anicake;
@@ -698,6 +726,7 @@ document.querySelector(".heart").innerHTML = heart;
 document.querySelector(".fruit").innerHTML = fruit;
 document.querySelector(".doll").innerHTML = doll;
 document.querySelector(".multi").innerHTML = multi;
+document.querySelector(".pic").innerHTML = pic;
 }
 };
 
