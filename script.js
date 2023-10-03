@@ -159,22 +159,32 @@ function  calculateTotal() {
   return `₹ ${Total.toFixed(2)}`;
 }
 function submitOrder(cartData) {
-  var message = "I would like to order:\n";
+   // Retrieve the current order number from localStorage
+   let currentOrderNumber = localStorage.getItem("currentOrderNumber");
 
+   // If there's no stored order number, start with 1
+   if (!currentOrderNumber) {
+     currentOrderNumber = 1;
+   } else {
+     // If there's a stored order number, increment it by 1
+     currentOrderNumber = parseInt(currentOrderNumber) + 1;
+   }
+ 
+   const formattedOrderNumber = String(currentOrderNumber).padStart(4, '0');
+
+   localStorage.setItem("currentOrderNumber", currentOrderNumber);
+
+  var message = `Order  : *ORD-${formattedOrderNumber}*\n`;
+  var totalAmount =  calculateTotal();
+  message  += `Amount :- *${totalAmount}*\n\n`;
+  message  += '----------items----------\n\n'
   for (const itemId in cartData) {
     if (cartData.hasOwnProperty(itemId)) {
       const item = cartData[itemId];
-      message += `${item.quantity}x ${item.name} ${item.code} - ₹ ${item.price}\n`;
+      message += `${item.quantity}.0 x   ${item.name} ${item.code} = ₹ ${item.price}\n`;
     }
   }
-
-   // Calculate the total amount
-   var totalAmount =  calculateitemTotal();
-   message += `\nItem amount: ${totalAmount}\nDelivery:         ₹ 20.00`;
-
-  // Calculate the total amount
-  var totalAmount =  calculateTotal();
-  message += `\nTotal amount: ${totalAmount}`;
+   message +=  `Service Charge = ₹ 20.00\n`
 
   // Replace 'YOUR_WHATSAPP_NUMBER' with the actual WhatsApp number
   var whatsappNumber = '+917015823645';
