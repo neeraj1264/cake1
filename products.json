@@ -234,11 +234,11 @@
         "id": 20,
         "name": "Heart Cake",
         "price": {
-            "three": 350,
-            "four": 450,
-            "five": 550
+            "three": 400,
+            "four": 500,
+            "five": 600
                 },
-        "mrp":400,
+        "mrp":450,
         "code":"h5",
         "image":  "images/h7.png"
     },
